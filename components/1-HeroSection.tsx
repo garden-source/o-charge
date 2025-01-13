@@ -1,12 +1,11 @@
 // components/HeroSection.tsx
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function HeroSection() {
   return (
-    <section
-      id="hero"
-      className="h-auto p-8 bg-pink-100 flex flex-col items-center"
-    >
+    <SectionWrapper id="hero" backgroundColor="bg-white">
+
       <SectionHeading>フェチモデルになってみませんか？</SectionHeading>
 
       <p className="text-center max-w-2xl">
@@ -16,6 +15,6 @@ export default function HeroSection() {
       <button className="mt-6 px-4 py-2 bg-pink-500 text-white rounded">
         応募はこちら
       </button>
-    </section>
+    </SectionWrapper>
   );
 }

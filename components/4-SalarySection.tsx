@@ -1,11 +1,13 @@
 // components/SalarySection.tsx
 import Image from 'next/image';
 import React from 'react';
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function SalarySection() {
   return (
-    <section className="max-w-screen-md mx-auto my-8 px-4">
+    <SectionWrapper id="salary" backgroundColor="bg-pink">
+
       {/* タイトル */}
       <SectionHeading>どんなお仕事？</SectionHeading>
 
@@ -63,6 +65,6 @@ export default function SalarySection() {
           height={80}
         />
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

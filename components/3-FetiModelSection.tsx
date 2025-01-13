@@ -1,11 +1,12 @@
 // components/FetiModelSection.tsx
 import Image from 'next/image';
 import React from 'react';
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function FetiModelSection() {
   return (
-    <main className="min-h-screen bg-[#F5F7FB] p-4">
+    <SectionWrapper id="fetimodel" backgroundColor="bg-purple">
       {/* タイトル */}
       <SectionHeading>フェチモデルとは？</SectionHeading>
 
@@ -102,6 +103,6 @@ export default function FetiModelSection() {
           </div>
         </div>
       </section>
-    </main>
+    </SectionWrapper>
   );
 }

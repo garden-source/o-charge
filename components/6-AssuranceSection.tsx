@@ -1,12 +1,13 @@
 // components/AssuranceSection.tsx
-
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function AssuranceSection() {
   return (
-    <section id="assurance" className="p-8 bg-gray-50">
+    <SectionWrapper id="assurance" backgroundColor="bg-pink">
+
       {/* タイトル */}
-      <SectionHeading>スタジオ紹介</SectionHeading>
+      <SectionHeading>3つの安心</SectionHeading>
       <div className="flex flex-col md:flex-row gap-4">
         {/* 1つ目 */}
         <div className="p-4 border rounded flex-1">
@@ -62,6 +63,7 @@ export default function AssuranceSection() {
           </p>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
+
   );
 }

@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function StudioSection() {
@@ -12,7 +13,8 @@ export default function StudioSection() {
   };
 
   return (
-    <section id="studio" className="p-8 bg-white">
+    <SectionWrapper id="studio" backgroundColor="bg-gradient-to-b from-[#d1edf6] to-[#e4dbf9]">
+
       {/* タイトル */}
       <SectionHeading>スタジオ紹介</SectionHeading>
 
@@ -40,7 +42,7 @@ export default function StudioSection() {
       {isOpen && (
         <div className="mt-4 p-4 border border-gray-300 rounded">
           <p className="mb-2">
-            さらに詳しいスタジオ情報がここに入ります。  
+            さらに詳しいスタジオ情報がここに入ります。
             例: 撮影ブースの詳細や設備の紹介など。
           </p>
           <img
@@ -53,6 +55,6 @@ export default function StudioSection() {
           </p>
         </div>
       )}
-    </section>
+    </SectionWrapper>
   );
 }

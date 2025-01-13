@@ -1,9 +1,10 @@
 // components/AboutWorkSection.tsx
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function AboutWorkSection() {
   return (
-    <section className="mx-auto max-w-screen-md px-4 py-8">
+    <SectionWrapper id="about-work" backgroundColor="bg-purple">
       {/* タイトル */}
       <SectionHeading>どんなお仕事？</SectionHeading>
 
@@ -27,6 +28,6 @@ export default function AboutWorkSection() {
         お金に変わる時代。<br />
         それ万札にして還元します！
       </p>
-    </section>
+    </SectionWrapper>
   );
 }

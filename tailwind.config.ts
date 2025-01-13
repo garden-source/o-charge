@@ -12,6 +12,12 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'flow-tile': "url('/images/flow-tile.png')",
+      },
+      colors: {
+        // お好きなキー名を定義
+        'purple': '#f2f3fe',
+        'pink': '#fffaf7',
       },
     },
   },

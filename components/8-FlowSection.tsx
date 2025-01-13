@@ -1,10 +1,10 @@
 // components/FlowSection.tsx
-
+import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 
 export default function FlowSection() {
   return (
-    <section id="flow" className="p-8 bg-gray-50">
+    <SectionWrapper id="flow" backgroundColor="bg-flow-tile bg-repeat bg-128-128 w-full">
       {/* タイトル */}
       <SectionHeading>応募の流れ</SectionHeading>
 
@@ -26,6 +26,6 @@ export default function FlowSection() {
           外部フォームへ移動
         </a>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
