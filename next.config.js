@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    images: {
+        unoptimized: true,
+    },
     // SSGを簡易的に有効にする場合はこんな設定例
     output: 'export',
 }

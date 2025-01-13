@@ -1,18 +1,22 @@
 // app/page.tsx
-import HeroSection from "@/components/HeroSection";
-import FetiModelSection from "@/components/FetiModelSection";
-import SalarySection from "@/components/SalarySection";
-import StudioSection from "@/components/StudioSection";
-import AssuranceSection from "@/components/AssuranceSection";
-import VoiceSection from "@/components/VoiceSection";
-import FlowSection from "@/components/FlowSection";
-import FaqSection from "@/components/FaqSection";
+import HeroSection from "@/components/1-HeroSection";
+import AboutWorkSection from "@/components/2-AboutWorkSection";
+import FetiModelSection from "@/components/3-FetiModelSection";
+import SalarySection from "@/components/4-SalarySection";
+import StudioSection from "@/components/5-StudioSection";
+import AssuranceSection from "@/components/6-AssuranceSection";
+import VoiceSection from "@/components/7-VoiceSection";
+import FlowSection from "@/components/8-FlowSection";
+import FaqSection from "@/components/9-FaqSection";
 
 export default function HomePage() {
   return (
     <>
       {/* メインコピー＋メイン説明＋どんなお仕事？ */}
       <HeroSection />
+
+      {/* フェチモデルとは？吹き出し形式 */}
+      <AboutWorkSection />
 
       {/* フェチモデルとは？吹き出し形式 */}
       <FetiModelSection />
