@@ -1,14 +1,14 @@
 // components/SalarySection.tsx
 import Image from 'next/image';
 import React from 'react';
+import SectionHeading from '@/components/SectionHeading';
 
 export default function SalarySection() {
   return (
     <section className="max-w-screen-md mx-auto my-8 px-4">
       {/* タイトル */}
-      <h2 className="text-2xl font-bold text-center mb-4">お給料は？</h2>
-      <hr className="border-gray-300 mb-4" />
-      
+      <SectionHeading>どんなお仕事？</SectionHeading>
+
       {/* 説明文 */}
       <p className="text-center mb-6 leading-relaxed">
         おさいふチャージは

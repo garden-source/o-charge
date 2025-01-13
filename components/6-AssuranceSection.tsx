@@ -1,14 +1,18 @@
 // components/AssuranceSection.tsx
+
+import SectionHeading from '@/components/SectionHeading';
+
 export default function AssuranceSection() {
   return (
     <section id="assurance" className="p-8 bg-gray-50">
-      <h2 className="text-2xl font-bold mb-4">3つの安心</h2>
+      {/* タイトル */}
+      <SectionHeading>スタジオ紹介</SectionHeading>
       <div className="flex flex-col md:flex-row gap-4">
         {/* 1つ目 */}
         <div className="p-4 border rounded flex-1">
           <h3 className="font-semibold">アダルト行為一切なし！</h3>
           <p>
-            面接に行ったら絡みありのお仕事しかないと言われた…　
+            面接に行ったら絡みありのお仕事しかないと言われた…
             自慰行為を撮られて…なんてことはありません！
             <br />
             嫌なことはNGでOK！<br />

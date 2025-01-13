@@ -1,9 +1,11 @@
 // components/AboutWorkSection.tsx
+import SectionHeading from '@/components/SectionHeading';
+
 export default function AboutWorkSection() {
   return (
     <section className="mx-auto max-w-screen-md px-4 py-8">
       {/* タイトル */}
-      <h2 className="text-center text-2xl font-bold mb-6">どんなお仕事？</h2>
+      <SectionHeading>どんなお仕事？</SectionHeading>
 
       {/* メインの説明文 */}
       <p className="text-center leading-relaxed mb-8">

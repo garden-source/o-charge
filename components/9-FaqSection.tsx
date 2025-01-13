@@ -2,6 +2,7 @@
 "use client"; // アコーディオンの開閉にクライアント側の状態管理を使用
 
 import { useState } from "react";
+import SectionHeading from '@/components/SectionHeading';
 
 const faqs = [
   {
@@ -28,7 +29,8 @@ export default function FaqSection() {
 
   return (
     <section id="faq" className="p-8 bg-white">
-      <h2 className="text-2xl font-bold mb-4">よくあるご質問</h2>
+      {/* タイトル */}
+      <SectionHeading>よくあるご質問</SectionHeading>
       <div className="space-y-2">
         {faqs.map((faq, index) => (
           <div key={index} className="border rounded">

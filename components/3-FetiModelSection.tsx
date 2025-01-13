@@ -1,13 +1,15 @@
 // components/FetiModelSection.tsx
 import Image from 'next/image';
 import React from 'react';
+import SectionHeading from '@/components/SectionHeading';
 
 export default function FetiModelSection() {
   return (
     <main className="min-h-screen bg-[#F5F7FB] p-4">
       {/* タイトル */}
+      <SectionHeading>フェチモデルとは？</SectionHeading>
+
       <section className="max-w-screen-md mx-auto mb-8">
-        <h1 className="text-2xl font-bold text-center mb-4">フェチモデルとは？</h1>
         <p className="leading-relaxed text-center">
           フェチモデルとは特定の部位や行為に嗜好を持った人を対象にした
           動画に出演するモデルのこと。<br />
@@ -15,7 +17,7 @@ export default function FetiModelSection() {
           想像しやすいかもしれません。
         </p>
       </section>
-      
+
       {/* セクション自体を中央寄せしたい */}
       <section className="max-w-xs mx-auto space-y-6">
         {/* 吹き出し① */}
@@ -102,5 +104,4 @@ export default function FetiModelSection() {
       </section>
     </main>
   );
-  }
-  
+}

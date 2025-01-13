@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import SectionHeading from '@/components/SectionHeading';
 
 export default function StudioSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,9 @@ export default function StudioSection() {
 
   return (
     <section id="studio" className="p-8 bg-white">
-      <h2 className="text-2xl font-bold mb-4">スタジオ紹介</h2>
+      {/* タイトル */}
+      <SectionHeading>スタジオ紹介</SectionHeading>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* 仮の画像URLを配置。必要に応じてpublicフォルダやCDN画像を使用 */}
         <img src="/studio1.jpg" alt="Studio 1" className="w-full h-auto" />
