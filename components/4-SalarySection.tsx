@@ -19,7 +19,7 @@ export default function SalarySection() {
         <br />
         コンテンツ作成メーカーのため
         <br />
-        <span className="text-red-500 font-bold text-lg">
+        <span className="text-[#e13f55] font-bold text-lg">
           完全手渡し・日払い制
         </span>
         <br />

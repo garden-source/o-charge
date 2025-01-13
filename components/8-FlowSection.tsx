@@ -7,14 +7,39 @@ export default function FlowSection() {
     <SectionWrapper id="flow" backgroundColor="bg-flow-tile bg-repeat bg-128-128 w-full">
       {/* タイトル */}
       <SectionHeading>応募の流れ</SectionHeading>
-
-      <ol className="list-decimal list-inside pl-4 space-y-2">
-        <li>お問い合わせフォーム(外部)からご連絡</li>
-        <li>スタッフより面談日程のご案内</li>
-        <li>面談・簡単な撮影テスト</li>
-        <li>本契約後にお仕事スタート</li>
-      </ol>
-
+      <div className="p-4 text-center">
+        <p>
+          応募条件：18歳以上（高校生不可）〜40歳未満
+        </p>
+        <img
+          src="/images/8-Flow/1.png"
+          alt=""
+          className="mx-auto w-[450px] h-auto mb-4"
+        />
+        <p>
+          LINEでの応募はこちらから
+        </p>
+        <img
+          src="/images/8-Flow/2.png"
+          alt=""
+          className="mx-auto w-[450px] h-auto mb-4"
+        />
+        <img
+          src="/images/8-Flow/3.png"
+          alt=""
+          className="mx-auto w-[450px] h-auto mb-4"
+        />
+        <img
+          src="/images/8-Flow/4.png"
+          alt=""
+          className="mx-auto w-[450px] h-auto mb-4"
+        />
+        <img
+          src="/images/8-Flow/5.png"
+          alt=""
+          className="mx-auto w-[450px] h-auto mb-4"
+        />
+      </div>
       {/* 外部フォームへのリンク */}
       <div className="mt-6">
         <a
@@ -26,6 +51,6 @@ export default function FlowSection() {
           外部フォームへ移動
         </a>
       </div>
-    </SectionWrapper>
+    </SectionWrapper >
   );
 }

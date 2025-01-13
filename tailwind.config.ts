@@ -18,6 +18,7 @@ const config: Config = {
         // お好きなキー名を定義
         'purple': '#f2f3fe',
         'pink': '#fffaf7',
+        'red': '#fde0e0',
       },
     },
   },
