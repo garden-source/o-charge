@@ -7,14 +7,14 @@ export default function VoiceSection() {
     <SectionWrapper id="voice" backgroundColor="relative w-full">
       {/* 上の画像（右上に固定） */}
       <img
-        src="/images/voice-purple-top.png"
+        src="/images/BG/voice-purple-top.png"
         alt=""
         className="absolute top-0 right-0 w-[350px] h-auto"
       />
 
       {/* 新たに追加する右上画像（手前に表示） */}
       <img
-        src="/images/voice-star.png"
+        src="/images/BG/voice-star.png"
         alt=""
         className="
           absolute
@@ -28,7 +28,7 @@ export default function VoiceSection() {
 
       {/* 下の画像（左下に固定） */}
       <img
-        src="/images/voice-purple-bottom.png"
+        src="/images/BG/voice-purple-bottom.png"
         alt=""
         className="absolute bottom-0 left-0 w-[350px] h-auto"
       />

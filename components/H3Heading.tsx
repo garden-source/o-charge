@@ -19,7 +19,7 @@ export default function H3Heading({
                 {children}
             </h3>
             <img
-                src="/images/h3-line.png" // 仕切り線として使う画像 (public/images/h3-line.png)
+                src="/images/BG/h3-line.png" // 仕切り線として使う画像 (public/images/h3-line.png)
                 alt=""                  // 装飾目的なら空ALTでもOK, SEO的には必要に応じて
                 className="mx-auto w-[200px] h-auto"
             />

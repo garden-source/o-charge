@@ -154,11 +154,7 @@ export default function StudioSection() {
           <button
             onClick={handleShowMore}
             // もともとのクラスに加えて、グラデーション境界線が見やすいよう border は削除
-            className="bg-[#f2f3ff] text-gray-600 px-12 rounded-full border-4 border-transparent" // テキストをグレーにし、左右のパディングを増やす
-            style={{
-              // 好みでボタンの角丸をさらに強調したいなら以下で調整
-              // borderRadius: '50px',
-            }}
+            className="bg-[#f2f3ff] text-[#736b99] px-12 rounded-full border-4 border-transparent"
           >
             {showMore ? '閉じる' : 'もっと見る'}
           </button>
