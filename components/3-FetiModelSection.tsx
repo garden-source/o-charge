@@ -26,10 +26,8 @@ export default function FetiModelSection() {
         <div className="flex items-start space-x-2">
           {/* 吹き出し本体 */}
           <div className="relative w-[200px] p-4 bg-red rounded-xl speech-bubble">
-            <p className="leading-relaxed">
-              おさいふチャージはチラリズムや
-              特定の行為に興奮する人たちに
-              向けた作品を作っているよっ！
+            <p className="leading-relaxed font-jkg ">
+              おさいふチャージはチラリズムや特定の行為に興奮する人たちに向けた作品を作っているよっ！
             </p>
           </div>
           {/* キャラクターイラスト（右側） */}
@@ -56,7 +54,7 @@ export default function FetiModelSection() {
           </div>
           {/* 吹き出し本体 */}
           <div className="relative w-[300px] p-4 bg-red rounded-xl speech-bubble">
-            <p className="leading-relaxed">
+            <p className="leading-relaxed font-jkg ">
               AVと何が違うの？
             </p>
           </div>
@@ -66,10 +64,8 @@ export default function FetiModelSection() {
         <div className="flex items-start space-x-2">
           {/* 吹き出し本体 */}
           <div className="relative w-[300px] p-4 bg-red rounded-xl speech-bubble">
-            <p className="leading-relaxed">
-              AVは性的な行為をメインに描き、<br />
-              一般的な性的嗜好を持つ成人向け視聴者を
-              対象とした作品に対し、
+            <p className="leading-relaxed font-jkg">
+              AVは性的な行為をメインに描き、一般的な性的嗜好を持つ成人向け視聴者を対象とした作品に対し、
             </p>
           </div>
           {/* キャラクターイラスト（右側） */}
@@ -87,10 +83,8 @@ export default function FetiModelSection() {
         <div className="flex items-start space-x-2">
           {/* 吹き出し本体 */}
           <div className="relative w-[300px] p-4 bg-red rounded-xl speech-bubble">
-            <p className="leading-relaxed">
-              フェチ動画は特定の行為に興奮や満足を
-              見いだす人を対象として作られる作品に
-              なるよっ！
+            <p className="leading-relaxed font-jkg ">
+              フェチ動画は特定の行為に興奮や満足を見いだす人を対象として作られる作品になるよっ！
             </p>
           </div>
           {/* キャラクターイラスト（右側） */}

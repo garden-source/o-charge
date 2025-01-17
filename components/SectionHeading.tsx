@@ -14,11 +14,11 @@ export default function SectionHeading({
     return (
         <>
             <h2
-                className={`text-2xl font-bold text-center mb-4 ${className}`}
+                className={`text-2xl font-bold text-center mb-2 ${className}`}
             >
                 {children}
             </h2>
-            <hr className="border-dotted border-1 border-gray-300 my-4" />
+            <hr className="border-dotted border-1 border-gray-400 mt-2 mb-2 w-2/3 mx-auto" />
         </>
     );
 }

@@ -16,7 +16,7 @@ export default function AboutWorkSection() {
       </p>
 
       {/* チェック項目（リスト） */}
-      <ul className="flex flex-col items-center space-y-2 mb-8">
+      <ul className="space-y-2 mb-8 mx-auto text-left" style={{ maxWidth: 'fit-content' }}>
         <li className="text-lg">☑ エロ行為なし</li>
         <li className="text-lg">☑ 接客・接触なし</li>
         <li className="text-lg">☑ 登録・所属必要なし</li>

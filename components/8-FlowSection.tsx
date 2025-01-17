@@ -8,7 +8,7 @@ export default function FlowSection() {
       {/* タイトル */}
       <SectionHeading>応募の流れ</SectionHeading>
       <div className="p-4 text-center">
-        <p>
+        <p className='text-sm mb-2'>
           応募条件：18歳以上（高校生不可）〜40歳未満
         </p>
         <img
@@ -16,7 +16,7 @@ export default function FlowSection() {
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />
-        <p>
+        <p className='text-sm m-4'>
           LINEでの応募はこちらから
         </p>
         <img

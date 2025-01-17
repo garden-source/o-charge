@@ -14,7 +14,7 @@ export default function H3Heading({
     return (
         <>
 
-            <h3 className={`font-semibold text-center ${className}`}
+            <h3 className={`font-semibold text-center ${className} text-xl`}
             >
                 {children}
             </h3>

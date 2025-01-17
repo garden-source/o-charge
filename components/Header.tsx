@@ -11,12 +11,12 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] px-4">
       {/* ヘッダー内のレイアウトコンテナ */}
-      <div className="max-w-screen-md mx-auto flex items-center justify-between py-2">
+      <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
         {/* 左側: ロゴ画像 */}
         <img
           src="/images/Other/site-title.png"
           alt="高収入パーツモデルアルバイトのおさいふチャージ"
-          className="w-[200px] h-auto"
+          className="w-[280px] h-auto p-0"
         />
 
         {/* 右側: ハンバーガーアイコン（常に表示） */}
@@ -27,9 +27,9 @@ export default function Header() {
         >
           {/* 3本線アイコン (SVG) */}
           <svg
-            className="w-6 h-6"
+            className="w-12 h-12"
             fill="none"
-            stroke="currentColor"
+            stroke="#A0A0A0"
             strokeWidth="3"
             viewBox="0 0 24 24"
           >

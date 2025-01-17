@@ -14,13 +14,13 @@ export default function AssuranceSection() {
         <img
           src="/images/6-Assurance/assurance1.png" // 仕切り線として使う画像 (public/images/6-Assurance/h3-line.png)
           alt=""                  // 装飾目的なら空ALTでもOK, SEO的には必要に応じて
-          className="mx-auto w-[150px] h-auto mb-4"
+          className="mx-auto w-[180px] h-auto mb-4"
         />
         <H3Heading>アダルト行為一切なし！</H3Heading>
         <p>
           面接に行ったら絡みありの<br />
-          お仕事しかないと言われた…<br />
-          自慰行為を撮られて…<br />
+          お仕事しかないと言われた･･･<br />
+          自慰行為を撮られた･･･<br />
           なんてことはありません！<br />
           <br />
           嫌なことはNGでOK！<br />

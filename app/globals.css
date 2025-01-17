@@ -22,3 +22,18 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+/* styles.css */
+@font-face {
+  font-family: 'JKG-L';
+  src: url('/fonts/JKG-L_3.ttf') format('truetype');
+  /* フォントファイルのパスを指定 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-jkg {
+  font-family: 'JKG-L', sans-serif;
+  font-size: 0.9rem;
+  /* 例: 1remの75%に設定 */
+}
