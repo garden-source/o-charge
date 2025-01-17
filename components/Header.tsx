@@ -47,7 +47,7 @@ export default function Header() {
         className={`
           ${isOpen ? "block" : "hidden"}
           absolute top-[60px] right-4
-          bg-gray-200 rounded
+          bg-[#4b4a4d] rounded
           p-4
         `}
       >
@@ -55,29 +55,29 @@ export default function Header() {
           <li>
             <a href="#hero"></a>
           </li>
-          <li>
-            <a href="#about-work">お仕事内容</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#about-work" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事内容</a>
           </li>
-          <li>
-            <a href="#feti-model">フェチモデルとは</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#feti-model" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">フェチモデルとは</a>
           </li>
-          <li>
-            <a href="#salary">お給料について</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#salary" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料について</a>
           </li>
-          <li>
-            <a href="#studio">スタジオ紹介</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#studio" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">スタジオ紹介</a>
           </li>
-          <li>
-            <a href="#assurance">3つの安心</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#assurance" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</a>
           </li>
-          <li>
-            <a href="#voice">先輩モデルさんの声</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#voice" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">先輩モデルさんの声</a>
           </li>
-          <li>
-            <a href="#flow">応募の流れ</a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="#flow" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">応募の流れ</a>
           </li>
-          <li>
-            <a href="#faq">よくあるご質問</a>
+          <li className="">
+            <a href="#faq" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">よくあるご質問</a>
           </li>
         </ul>
       </nav>
