@@ -1,24 +1,79 @@
 // components/Footer.tsx
-import FooterMenu from "@/components/FooterMenu";
 
 export default function Footer() {
   return (
     <footer className="p-4 bg-gray-100 mt-10">
-      <div className="max-w-4xl mx-auto">
-        {/* フッターメニュー (SNSリンクなど) */}
-        <FooterMenu />
-
-        <div className="mt-4">
-          {/* プライバシーポリシーへのリンク例 */}
-          <a href="#privacy-policy" className="text-sm text-gray-600">
-            プライバシーポリシー
-          </a>
+      <div className="max-w-screen-md mx-auto">
+        <div className="m-8">
+          <h4 className="font-bold mb-2">トップ</h4>
+          <ul className="space-y-4 list-inside">
+            <li>
+              <a href="#about-work" className="block">お仕事内容</a>
+            </li>
+            <li>
+              <a href="#feti-model" className="block">フェチモデルとは</a>
+            </li>
+            <li>
+              <a href="#salary" className="block">お給料について</a>
+            </li>
+            <li>
+              <a href="#studio" className="block">スタジオ紹介</a>
+            </li>
+            <li>
+              <a href="#assurance" className="block">3つの安心</a>
+            </li>
+            <li>
+              <a href="#voice" className="block">先輩モデルさんの声</a>
+            </li>
+            <li>
+              <a href="#flow" className="block">応募の流れ</a>
+            </li>
+            <li>
+              <a href="#faq" className="block">よくあるご質問</a>
+            </li>
+          </ul>
+        </div>
+        <div className="m-8">
+          <h4 className="font-bold mb-2">公式SNS</h4>
+          <ul className="space-y-4 list-inside">
+            <li>
+              <a href="#" className="block">X</a>
+            </li>
+            <li>
+              <a href="#" className="block">Instagram</a>
+            </li>
+            <li>
+              <a href="#" className="block">Tik Tok</a>
+            </li>
+            <li>
+              <a href="#" className="block">バニラサイト</a>
+            </li>
+          </ul>
+        </div>
+        <div className="m-8">
+          <h4 className="font-bold mb-2">規約</h4>
+          <ul className="space-y-4 list-inside">
+            <li>
+              <a href="#" className="block">X</a>
+            </li>
+            <li>
+              <a href="#" className="block">Instagram</a>
+            </li>
+            <li>
+              <a href="#" className="block">Tik Tok</a>
+            </li>
+            <li>
+              <a href="#" className="block">バニラサイト</a>
+            </li>
+          </ul>
         </div>
 
-        <p className="mt-2 text-sm text-gray-500">
-          © 2024 FetiModelSite
-        </p>
+        <div className="m-8">
+          <p className="mt-2 text-sm text-gray-500">
+            © {new Date().getFullYear()} おさいふチャージ
+          </p>
+        </div>
       </div>
-    </footer>
+    </footer >
   );
 }

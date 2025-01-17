@@ -2,6 +2,8 @@
 import "./globals.css";  // 必要に応じてグローバルCSS
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FooterMenu from "@/components/FooterMenu";
+
 import { ReactNode } from "react";
 
 export const metadata = {
@@ -20,6 +22,8 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        {/* フッターメニュー (SNSリンクなど) */}
+        <FooterMenu />
       </body>
     </html>
   );
