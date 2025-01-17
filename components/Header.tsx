@@ -27,7 +27,7 @@ export default function Header() {
         >
           {/* 3本線アイコン (SVG) */}
           <svg
-            className="w-12 h-12"
+            className="w-10 h-10"
             fill="none"
             stroke="#A0A0A0"
             strokeWidth="3"
