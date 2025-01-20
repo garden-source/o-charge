@@ -12,7 +12,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'flow-tile': "url('https://res.cloudinary.com/dvwy63ef7/image/upload/q_auto,f_auto/images/BG/flow-tile.png')",
+        'flow-tile': "url('https://res.cloudinary.com/dvwy63ef7/image/upload/v1737359868/flow-tile_kstzvr.png')",
       },
       colors: {
         // お好きなキー名を定義

@@ -54,22 +54,14 @@ export default function Footer() {
           <h4 className="font-bold mb-2">規約</h4>
           <ul className="space-y-4 list-inside">
             <li>
-              <a href="#" className="block">X</a>
+              <a href="#" className="block">プライバシーポリシー</a>
             </li>
-            <li>
-              <a href="#" className="block">Instagram</a>
-            </li>
-            <li>
-              <a href="#" className="block">Tik Tok</a>
-            </li>
-            <li>
-              <a href="#" className="block">バニラサイト</a>
-            </li>
+
           </ul>
         </div>
 
         <div className="m-8">
-          <p className="mt-2 text-sm text-gray-500">
+          <p className="mt-2 text-sm text-gray-500 mb-[100px]">
             © {new Date().getFullYear()} おさいふチャージ
           </p>
         </div>

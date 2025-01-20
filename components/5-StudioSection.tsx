@@ -187,7 +187,7 @@ export default function StudioSection() {
           className="fixed inset-0 bg-black bg-opacity-80 flex items-start justify-center z-50"
           onClick={handleClose}
         >
-          <div className="relative max-w-md h-[calc(28rem*1.3)] m-4 mt-20">
+          <div className="relative max-w-[50vw] h-[calc(50vh)] m-4 mt-20">
             <CldImage
               src={selectedImage}
               width={1000}

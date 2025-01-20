@@ -156,7 +156,7 @@ export default function FaqSection() {
           before:content-[''] 
           before:absolute 
           before:inset-0 
-          before:bg-[url('/images/BG/faq-tile.png')] 
+          before:bg-[url('https://res.cloudinary.com/dvwy63ef7/image/upload/q_auto,f_auto/images/BG/d6hig8nb8vl22edtwfcx.png')] 
           before:opacity-50
           before:bg-repeat 
           before:bg-[length:15px_15px]
