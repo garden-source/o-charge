@@ -1,8 +1,10 @@
 // components/FetiModelSection.tsx
-import Image from 'next/image';
+"use client";
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import { CldImage } from 'next-cloudinary';
 
 export default function FetiModelSection() {
   return (
@@ -32,11 +34,13 @@ export default function FetiModelSection() {
           </div>
           {/* キャラクターイラスト（右側） */}
           <div className="w-36 h-36 relative">
-            <Image
-              src="/images/3-FetiModel/character1.png" // 実際のパスに置き換えてください
+            <CldImage
+              // src="/images/3-FetiModel/character1.png" // 実際のパスに置き換えてください
+              src="images/3-FetiModel/e60ykjejzb6d5axet0vy"
+              width="260"
+              height="290"
               alt="キャラクター1"
-              layout="fill"
-              objectFit="contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
@@ -44,12 +48,14 @@ export default function FetiModelSection() {
         {/* 吹き出し② */}
         <div className="flex items-start space-x-2">
           {/* うさぎアイコン（左側） */}
-          <div className="w-12 h-12 relative">
-            <Image
-              src="/images/3-FetiModel/character2.png" // 実際のパスに置き換えてください
+          <div className="w-16 h-16 relative">
+            <CldImage
+              // src="/images/3-FetiModel/character2.png" // 実際のパスに置き換えてください
+              src="images/3-FetiModel/e2v4ei0ywous7zupmfwz"
+              width="64"
+              height="64"
               alt="ウサギ"
-              layout="fill"
-              objectFit="contain"
+              className="object-contain w-full h-full"
             />
           </div>
           {/* 吹き出し本体 */}
@@ -70,11 +76,13 @@ export default function FetiModelSection() {
           </div>
           {/* キャラクターイラスト（右側） */}
           <div className="w-16 h-16 relative">
-            <Image
-              src="/images/3-FetiModel/character1-icon.png" // 実際のパスに置き換えてください
+            <CldImage
+              // src="/images/3-FetiModel/character1-icon.png" // 実際のパスに置き換えてください
+              src="images/3-FetiModel/dfvd00xrxbrducdlnpdw"
+              width="64"
+              height="64"
               alt="キャラクター1"
-              layout="fill"
-              objectFit="contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
@@ -89,11 +97,13 @@ export default function FetiModelSection() {
           </div>
           {/* キャラクターイラスト（右側） */}
           <div className="w-16 h-16 relative">
-            <Image
-              src="/images/3-FetiModel/character1-icon.png" // 実際のパスに置き換えてください
+            <CldImage
+              // src="/images/3-FetiModel/character1-icon.png" // 実際のパスに置き換えてください
+              src="images/3-FetiModel/dfvd00xrxbrducdlnpdw"
+              width="64"
+              height="64"
               alt="キャラクター1"
-              layout="fill"
-              objectFit="contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>

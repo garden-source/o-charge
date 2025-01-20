@@ -1,20 +1,27 @@
 // components/VoiceSection.tsx
+"use client";
+
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import { CldImage } from 'next-cloudinary';
 
 export default function VoiceSection() {
   return (
     <SectionWrapper id="voice" backgroundColor="relative w-full">
       {/* 上の画像（右上に固定） */}
-      <img
-        src="/images/BG/voice-purple-top.png"
+      <CldImage
+        src="images/BG/a6a4qxyevea9m6umi8yi"
+        width={700}
+        height={400}
         alt=""
         className="absolute top-0 right-0 w-[350px] h-auto"
       />
 
       {/* 新たに追加する右上画像（手前に表示） */}
-      <img
-        src="/images/BG/voice-star.png"
+      <CldImage
+        src="images/BG/jbrdkzwgmwk6olwe2vks"
+        width={200}
+        height={200}
         alt=""
         className="
           absolute
@@ -27,8 +34,10 @@ export default function VoiceSection() {
       />
 
       {/* 下の画像（左下に固定） */}
-      <img
-        src="/images/BG/voice-purple-bottom.png"
+      <CldImage
+        src="images/BG/jr7xw2z8rwrnerbdn41b"
+        width={700}
+        height={400}
         alt=""
         className="absolute bottom-0 left-0 w-[350px] h-auto"
       />

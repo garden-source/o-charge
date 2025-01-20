@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import { CldImage } from 'next-cloudinary';
 
 export default function StudioSection() {
   const [showMore, setShowMore] = useState(false);
@@ -33,12 +34,15 @@ export default function StudioSection() {
       {/* スタジオ写真 */}
       <div className="grid grid-cols-2 gap-4 mt-4">
         <div className="flex flex-col">
-          <img
-            src="/images/5-Studio/photo1.jpg"
+          <CldImage
+            // src="/images/5-Studio/photo1.jpg"
+            src="images/5-Studio/qmpbx8hbbuet9jdylaet"
+            width="500"
+            height="400"
             alt="スタジオ1"
             className="w-full h-36 object-cover rounded-lg mb-4"
             onClick={() =>
-              handleImageClick('/images/5-Studio/photo1.jpg', [
+              handleImageClick('images/5-Studio/qmpbx8hbbuet9jdylaet', [
                 '# 撮影前はメイクのお時間',
                 '# メイク道具ぜんぶあります◎',
                 '# すっぴんでこれちゃう',
@@ -48,12 +52,15 @@ export default function StudioSection() {
               ])
             }
           />
-          <img
-            src="/images/5-Studio/photo3.jpg"
+          <CldImage
+            // src="/images/5-Studio/photo3.jpg"
+            src='images/5-Studio/ky8wl8rqjgukttlidju4'
+            width={500}
+            height={500}
             alt="スタジオ3"
             className="w-full h-60 object-cover rounded-lg"
             onClick={() =>
-              handleImageClick('/images/5-Studio/photo3.jpg', [
+              handleImageClick('images/5-Studio/ky8wl8rqjgukttlidju4', [
                 '#スタジオ3',
                 '#写真3',
                 '#インスタ風3',
@@ -62,24 +69,29 @@ export default function StudioSection() {
           />
         </div>
         <div className="flex flex-col">
-          <img
-            src="/images/5-Studio/photo2.jpg"
+          <CldImage
+            // src="/images/5-Studio/photo2.jpg"
+            src="images/5-Studio/oifrvuhqpntiz74hncpt"
+            width="500"
+            height="500"
             alt="スタジオ2"
             className="w-full h-60 object-cover rounded-lg mb-4"
             onClick={() =>
-              handleImageClick('/images/5-Studio/photo2.jpg', [
+              handleImageClick('images/5-Studio/oifrvuhqpntiz74hncpt', [
                 '#スタジオ2',
                 '#写真2',
                 '#インスタ風2',
               ])
             }
           />
-          <img
-            src="/images/5-Studio/photo4.jpg"
+          <CldImage
+            src="images/5-Studio/zncbfxjlom8tqngvpg57"
+            width={500}
+            height={400}
             alt="スタジオ4"
             className="w-full h-36 object-cover rounded-lg"
             onClick={() =>
-              handleImageClick('/images/5-Studio/photo4.jpg', [
+              handleImageClick('images/5-Studio/zncbfxjlom8tqngvpg57', [
                 '#スタジオ4',
                 '#写真4',
                 '#インスタ風4',
@@ -91,24 +103,28 @@ export default function StudioSection() {
         {showMore && (
           <>
             <div className="flex flex-col">
-              <img
-                src="/images/5-Studio/photo5.jpg"
+              <CldImage
+                src="images/5-Studio/jmohboshwthot90pb9yy"
+                width={500}
+                height={400}
                 alt="スタジオ5"
                 className="w-full h-36 object-cover rounded-lg mb-4"
                 onClick={() =>
-                  handleImageClick('/images/5-Studio/photo5.jpg', [
+                  handleImageClick('images/5-Studio/jmohboshwthot90pb9yy', [
                     '#スタジオ5',
                     '#写真5',
                     '#インスタ風5',
                   ])
                 }
               />
-              <img
-                src="/images/5-Studio/photo7.jpg"
+              <CldImage
+                src="images/5-Studio/q0g1dcssxynr5ga0gmdu"
+                width={500}
+                height={500}
                 alt="スタジオ7"
                 className="w-full h-60 object-cover rounded-lg"
                 onClick={() =>
-                  handleImageClick('/images/5-Studio/photo7.jpg', [
+                  handleImageClick('images/5-Studio/q0g1dcssxynr5ga0gmdu', [
                     '#スタジオ7',
                     '#写真7',
                     '#インスタ風7',
@@ -117,24 +133,28 @@ export default function StudioSection() {
               />
             </div>
             <div className="flex flex-col">
-              <img
-                src="/images/5-Studio/photo6.jpg"
+              <CldImage
+                src="images/5-Studio/qldwqixhatvwjjtaczms"
+                width={500}
+                height={500}
                 alt="スタジオ6"
                 className="w-full h-60 object-cover rounded-lg mb-4"
                 onClick={() =>
-                  handleImageClick('/images/5-Studio/photo6.jpg', [
+                  handleImageClick('images/5-Studio/qldwqixhatvwjjtaczms', [
                     '#スタジオ6',
                     '#写真6',
                     '#インスタ風6',
                   ])
                 }
               />
-              <img
-                src="/images/5-Studio/photo8.jpg"
+              <CldImage
+                src="images/5-Studio/mtz2c1z2x5d4ojbrivic"
+                width={500}
+                height={400}
                 alt="スタジオ8"
                 className="w-full h-36 object-cover rounded-lg"
                 onClick={() =>
-                  handleImageClick('/images/5-Studio/photo8.jpg', [
+                  handleImageClick('images/5-Studio/mtz2c1z2x5d4ojbrivic', [
                     '#スタジオ8',
                     '#写真8',
                     '#インスタ風8',
@@ -168,8 +188,10 @@ export default function StudioSection() {
           onClick={handleClose}
         >
           <div className="relative max-w-md h-[calc(28rem*1.3)] m-4 mt-20">
-            <img
+            <CldImage
               src={selectedImage}
+              width={1000}
+              height={1000}
               alt="拡大画像"
               className="w-full h-full object-cover rounded-lg mb-2"
               onClick={(e) => e.stopPropagation()}

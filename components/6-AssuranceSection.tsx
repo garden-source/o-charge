@@ -1,7 +1,10 @@
 // components/AssuranceSection.tsx
+"use client";
+
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import H3Heading from '@/components/H3Heading';
+import { CldImage } from 'next-cloudinary';
 
 export default function AssuranceSection() {
   return (
@@ -11,9 +14,11 @@ export default function AssuranceSection() {
       <SectionHeading>3つの安心</SectionHeading>
       {/* 1つ目 */}
       <div className="p-4 text-center">
-        <img
-          src="/images/6-Assurance/assurance1.png" // 仕切り線として使う画像 (public/images/6-Assurance/h3-line.png)
-          alt=""                  // 装飾目的なら空ALTでもOK, SEO的には必要に応じて
+        <CldImage
+          src="images/6-Assurance/daiemoh2vcuvmtv5fuqh"
+          width={360}
+          height={230}
+          alt=""
           className="mx-auto w-[180px] h-auto mb-4"
         />
         <H3Heading>アダルト行為一切なし！</H3Heading>
@@ -30,9 +35,11 @@ export default function AssuranceSection() {
 
       {/* 2つ目 */}
       <div className="p-4 text-center">
-        <img
-          src="/images/6-Assurance/assurance2.png" // 仕切り線として使う画像 (public/images/6-Assurance/h3-line.png)
-          alt=""                  // 装飾目的なら空ALTでもOK, SEO的には必要に応じて
+        <CldImage
+          src="images/6-Assurance/rhxpuw8qzkkw6yg88drn"
+          width={300}
+          height={300}
+          alt=""
           className="mx-auto w-[140px] h-auto mb-4"
         />
         <H3Heading>接触・接客いりません</H3Heading>
@@ -55,9 +62,11 @@ export default function AssuranceSection() {
 
       {/* 3つ目 */}
       <div className="p-4 text-center">
-        <img
-          src="/images/6-Assurance/assurance3.png" // 仕切り線として使う画像 (public/images/6-Assurance/h3-line.png)
-          alt=""                  // 装飾目的なら空ALTでもOK, SEO的には必要に応じて
+        <CldImage
+          src="images/6-Assurance/m8ormjug8vb5ujew6uur"
+          width={300}
+          height={300}
+          alt=""
           className="mx-auto w-[140px] h-auto mb-4"
         />
         <H3Heading>安心安全の身バレ対策</H3Heading>

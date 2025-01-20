@@ -1,6 +1,9 @@
 // components/FlowSection.tsx
+"use client";
+
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import { CldImage } from 'next-cloudinary';
 
 export default function FlowSection() {
   return (
@@ -11,31 +14,41 @@ export default function FlowSection() {
         <p className='text-sm mb-2'>
           応募条件：18歳以上（高校生不可）〜40歳未満
         </p>
-        <img
-          src="/images/8-Flow/1.png"
+        <CldImage
+          src="images/8-Flow/sdifdfs4mil1aesnzyrd"
+          width={900}
+          height={500}
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />
         <p className='text-sm m-4'>
           LINEでの応募はこちらから
         </p>
-        <img
-          src="/images/8-Flow/2.png"
+        <CldImage
+          src="images/8-Flow/pe6uwo9twkszak8hi3ua"
+          width={900}
+          height={500}
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />
-        <img
-          src="/images/8-Flow/3.png"
+        <CldImage
+          src="images/8-Flow/rmvcrfuoo76kzxy7k6ec"
+          width={900}
+          height={500}
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />
-        <img
-          src="/images/8-Flow/4.png"
+        <CldImage
+          src="images/8-Flow/gjkgeo4canmlmk8f6dwn"
+          width={900}
+          height={500}
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />
-        <img
-          src="/images/8-Flow/5.png"
+        <CldImage
+          src="images/8-Flow/soklvk6ks8zebdoh2wlz"
+          width={900}
+          height={500}
           alt=""
           className="mx-auto w-[450px] h-auto mb-4"
         />

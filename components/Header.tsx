@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { CldImage } from 'next-cloudinary';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +14,12 @@ export default function Header() {
       {/* ヘッダー内のレイアウトコンテナ */}
       <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
         {/* 左側: ロゴ画像 */}
-        <img
-          src="/images/Other/site-title.png"
+        <CldImage
+          src="images/Other/sa40upascor3jkzbzydt"
+          width={300}
+          height={150}
           alt="高収入パーツモデルアルバイトのおさいふチャージ"
-          className="w-[280px] h-auto p-0"
+          className="w-[220px] h-auto p-0"
         />
 
         {/* 右側: ハンバーガーアイコン（常に表示） */}

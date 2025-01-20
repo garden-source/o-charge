@@ -156,7 +156,7 @@ export default function FaqSection() {
           before:content-[''] 
           before:absolute 
           before:inset-0 
-          before:bg-[url('/images/faq-tile.png')] 
+          before:bg-[url('/images/BG/faq-tile.png')] 
           before:opacity-50
           before:bg-repeat 
           before:bg-[length:15px_15px]
