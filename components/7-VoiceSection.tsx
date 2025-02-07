@@ -1,7 +1,11 @@
 // components/VoiceSection.tsx
 "use client";
+import dynamic from "next/dynamic";
 
-import SectionWrapper from '@/components/SectionWrapper';
+const TwitterTimelineEmbed = dynamic(
+  () => import("react-twitter-embed").then((mod) => mod.TwitterTimelineEmbed),
+  { ssr: false }
+); import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
 import { CldImage } from 'next-cloudinary';
 
@@ -46,20 +50,24 @@ export default function VoiceSection() {
         {/* タイトル */}
         <SectionHeading>モデルさんの声</SectionHeading>
         <div className="space-y-4">
-          {/* ダミー: 実際はAPI等で取得してもOK */}
-          <blockquote className="p-4">
-            <p>
-              「初めは不安でしたが、スタッフさんが優しくフォローしてくれて安心でした。」
-            </p>
-            <cite className="block mt-2 text-sm text-gray-500">- @model_tanaka</cite>
-          </blockquote>
-
-          <blockquote className="p-4">
-            <p>
-              「自分の得意分野で活躍できるのが魅力。自由な働き方ができます！」
-            </p>
-            <cite className="block mt-2 text-sm text-gray-500">- @model_sayaka</cite>
-          </blockquote>
+          <p className="text-center whitespace-pre-line">
+            お仕事終わりに記入いただいているアンケート大公開！！<br />
+            最新のものは公式Xにて随時更新中♪
+          </p>
+          {/* Xの投稿を表示したい */}
+          <div className="flex justify-center">
+            <div className="m-4">
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="OsaifuCharge"
+                options={{ height: 600, width: 300 }}
+                noHeader
+                noFooter
+                theme="light"
+                autoHeight={false}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </SectionWrapper>

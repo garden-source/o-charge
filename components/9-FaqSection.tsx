@@ -123,7 +123,7 @@ export default function FaqSection() {
               <div className="flex-1 bg-[#f9daf2] rounded">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="flex items-start px-4 py-2 bg--[#f9daf2] text-sm font-normal"
+                  className="w-full flex items-start px-4 py-2 bg--[#f9daf2] text-sm font-normal"
                 >
                   <div className="flex items-top">
                     <div className="text-2xl mr-3 text-[#aa57c1]">Q</div>

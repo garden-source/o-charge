@@ -37,16 +37,16 @@ export default function Footer() {
           <h4 className="font-bold mb-2">公式SNS</h4>
           <ul className="space-y-4 list-inside">
             <li>
-              <a href="#" className="block">X</a>
+              <a href="https://x.com/OsaifuCharge" className="block">X</a>
             </li>
             <li>
-              <a href="#" className="block">Instagram</a>
+              <a href="https://www.instagram.com/osaifu_max/" className="block">Instagram</a>
             </li>
             <li>
-              <a href="#" className="block">Tik Tok</a>
+              <a href="https://tiktok.com/@osaifucharge.staff" className="block">Tik Tok</a>
             </li>
             <li>
-              <a href="#" className="block">バニラサイト</a>
+              <a href="https://kanto.qzin.jp/ocharge/?v=official" className="block">バニラサイト</a>
             </li>
           </ul>
         </div>

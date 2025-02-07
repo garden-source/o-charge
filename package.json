@@ -10,10 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.7",
     "next": "13.5.8",
     "next-cloudinary": "^6.16.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-twitter-embed": "^4.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

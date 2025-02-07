@@ -15,7 +15,7 @@ export default function Header() {
       <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
         {/* 左側: ロゴ画像 */}
         <CldImage
-          src="images/Other/sa40upascor3jkzbzydt"
+          src="images/Other/site-title_lfefuv"
           width={300}
           height={150}
           alt="高収入パーツモデルアルバイトのおさいふチャージ"

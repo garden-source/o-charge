@@ -1,6 +1,9 @@
 // components/AboutWorkSection.tsx
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeading from '@/components/SectionHeading';
+import dynamic from "next/dynamic";
+// クライアント側で動作する Slider を SSR なしで読み込む
+const Slider = dynamic(() => import("@/components/Slider"), { ssr: false });
 
 export default function AboutWorkSection() {
   return (
@@ -28,6 +31,11 @@ export default function AboutWorkSection() {
         お金に変わる時代。<br />
         それ万札にして還元します！
       </p>
+
+      {/* ここにスライダーを表示 */}
+      <div className="mt-8">
+        <Slider />
+      </div>
     </SectionWrapper>
   );
 }
