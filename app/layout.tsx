@@ -9,6 +9,12 @@ import { ReactNode } from "react";
 export const metadata = {
   title: "フェチモデル募集サイト",
   description: "フェチモデル募集サイトです。",
+  additionalMetaTags: [
+    {
+      name: "color-scheme",
+      content: "light",
+    },
+  ],
   openGraph: {
     title: "フェチモデル募集サイト",
     description: "フェチモデル募集サイトです。",
@@ -44,11 +50,13 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="mt-[60px]">
+          {children}
+        </main>
         <Footer />
         {/* フッターメニュー (SNSリンクなど) */}
         <FooterMenu />
       </body>
-    </html>
+    </html >
   );
 }

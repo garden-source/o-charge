@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="p-4 bg-gray-100 mt-10">
+    <footer className="p-4 bg-gray-100">
       <div className="max-w-screen-md mx-auto">
         <div className="m-8">
           <h4 className="font-bold mb-2">トップ</h4>

@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] px-4">
+    <header className="bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] px-4 fixed top-0 left-0 w-full z-50">
       {/* ヘッダー内のレイアウトコンテナ */}
       <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
         {/* 左側: ロゴ画像 */}
