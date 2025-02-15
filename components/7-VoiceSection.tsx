@@ -50,29 +50,35 @@ export default function VoiceSection() {
         {/* タイトル */}
         <SectionHeading>モデルさんの声</SectionHeading>
         <div className="space-y-4">
-          <p className="text-center whitespace-pre-line">
-            お仕事終わりに記入いただいているアンケート大公開！！<br />
-            最新のものは公式Xにて随時更新中♪
+          <p className="text-center">
+            お仕事終わりに記入いただいているアンケート大公開！！
           </p>
-          {/* Xの投稿を表示したい */}
-          <div className="flex justify-center">
+          {/* モバイル用の表示 */}
+          <p className="text-center md:hidden">
+            <a
+              href="https://twitter.com/OsaifuCharge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-400"
+            >
+              最新のものは公式Xにて随時更新中♪
+            </a>
+          </p>
+          <div className="hidden md:flex justify-center">
             <div className="m-4">
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="OsaifuCharge"
-                options={{ width: 300 }}
+                options={{ height: 600, width: 350 }}
                 noHeader
                 noFooter
                 theme="light"
-                autoHeight={true}
+                autoHeight={false}
               />
             </div>
           </div>
         </div>
-        <div className="text-center">
-          <p className="text-sm text-gray-600 mt-8 mb-2">
-            【画像をクリックして口コミを見る】
-          </p>
+        <div className="text-center mt-8">
           <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="" rel="noopener noreferrer">
             <CldImage
               src="images/7-Voice/hhgcj1kjzo8lhwcz9wul"
@@ -82,6 +88,9 @@ export default function VoiceSection() {
               className="mx-auto w-[450px] h-auto mb-4 cursor-pointer hover:opacity-80 transition-opacity"
             />
           </a>
+          <p className="text-sm text-gray-600 mb-2">
+            【画像をクリックして口コミを見る】
+          </p>
         </div>
       </div>
     </SectionWrapper>
