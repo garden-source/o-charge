@@ -151,15 +151,16 @@ export default function FlowSection() {
           <div className="mb-4">
             <label className="block mb-1">お名前</label>
             <input
-              name="お名前"
+              name="お名前（ニックネーム可）"
               type="text"
+              data-formrun-required
               className="w-full border border-gray-300 rounded-xl p-2"
               placeholder=""
             />
           </div>
 
           <div className="mb-4">
-            <label className="block mb-1">メールアドレス [必須]</label>
+            <label className="block mb-1">メールアドレス</label>
             <input
               name="メールアドレス"
               type="text"
@@ -177,13 +178,13 @@ export default function FlowSection() {
           </div>
 
           <div className="mb-4">
-            <label className="block mb-1">内容 [必須]</label>
+            <label className="block mb-1">内容</label>
             <textarea
               name="お問い合わせ"
               data-formrun-required
               rows={4}
               className="w-full border border-gray-300 rounded-xl p-2"
-              placeholder="例：パーツモデル希望"
+              placeholder="『パーツモデル希望』と一言打ち込んでいただければご応募完了とさせていただきます。"
             ></textarea>
             <div
               data-formrun-show-if-error="お問い合わせ"
