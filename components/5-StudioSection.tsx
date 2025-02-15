@@ -61,9 +61,12 @@ export default function StudioSection() {
             className="w-full h-60 object-cover rounded-lg"
             onClick={() =>
               handleImageClick('images/5-Studio/ky8wl8rqjgukttlidju4', [
-                '#スタジオ3',
-                '#写真3',
-                '#インスタ風3',
+                '#モデル様控室',
+                '#タブレット・全機種対応充電コード',
+                '#Free Wi-Fi完備',
+                '#冷暖房あり',
+                '#ホットカーペット・冷蔵庫・電子レンジあり',
+                '#一人の時間'
               ])
             }
           />
@@ -78,9 +81,12 @@ export default function StudioSection() {
             className="w-full h-60 object-cover rounded-lg mb-4"
             onClick={() =>
               handleImageClick('images/5-Studio/oifrvuhqpntiz74hncpt', [
-                '#スタジオ2',
-                '#写真2',
-                '#インスタ風2',
+                '#衣装部屋',
+                '#1000点以上あり',
+                '#いろんな系統があるよ',
+                '#撮影ごとにお着替え',
+                '#〇〇風撮影にも',
+                '#お洋服で印象操作'
               ])
             }
           />
@@ -92,9 +98,12 @@ export default function StudioSection() {
             className="w-full h-36 object-cover rounded-lg"
             onClick={() =>
               handleImageClick('images/5-Studio/zncbfxjlom8tqngvpg57', [
-                '#スタジオ4',
-                '#写真4',
-                '#インスタ風4',
+                '#変装グッズ多数あり',
+                '#ウィッグ',
+                '#ストレートアイロン',
+                '#ドライヤー',
+                '#メガネ・マスク',
+                '#身バレ対策'
               ])
             }
           />
@@ -111,9 +120,9 @@ export default function StudioSection() {
                 className="w-full h-36 object-cover rounded-lg mb-4"
                 onClick={() =>
                   handleImageClick('images/5-Studio/jmohboshwthot90pb9yy', [
-                    '#スタジオ5',
-                    '#写真5',
-                    '#インスタ風5',
+                    '#トイレ風セット',
+                    '#〇〇風撮影に',
+                    '#たくさん出るとお給料UP！？'
                   ])
                 }
               />
@@ -125,9 +134,10 @@ export default function StudioSection() {
                 className="w-full h-60 object-cover rounded-lg"
                 onClick={() =>
                   handleImageClick('images/5-Studio/q0g1dcssxynr5ga0gmdu', [
-                    '#スタジオ7',
-                    '#写真7',
-                    '#インスタ風7',
+                    '#エレベーター風セット',
+                    '#手作り',
+                    '#〇〇風撮影に',
+                    '#狭い空間でのハプニング'
                   ])
                 }
               />
@@ -141,9 +151,10 @@ export default function StudioSection() {
                 className="w-full h-60 object-cover rounded-lg mb-4"
                 onClick={() =>
                   handleImageClick('images/5-Studio/qldwqixhatvwjjtaczms', [
-                    '#スタジオ6',
-                    '#写真6',
-                    '#インスタ風6',
+                    '#リビング風セット',
+                    '#いろんなセットがあるよ',
+                    '#〇〇風撮影に',
+                    '#セットは毎回組み替えてるよ！'
                   ])
                 }
               />
@@ -155,9 +166,10 @@ export default function StudioSection() {
                 className="w-full h-36 object-cover rounded-lg"
                 onClick={() =>
                   handleImageClick('images/5-Studio/mtz2c1z2x5d4ojbrivic', [
-                    '#スタジオ8',
-                    '#写真8',
-                    '#インスタ風8',
+                    '#オフィスの倉庫風セット',
+                    '#高いものを取るときに…',
+                    '#〇〇風撮影に',
+                    '#セットは毎回組み替えてるよ！'
                   ])
                 }
               />
@@ -167,20 +179,14 @@ export default function StudioSection() {
       </div>
 
       {/* 「もっと見る」ボタン */}
-      <div className="text-center mt-4">
-        {/* ① ボタンを包む div でグラデーションを指定 */}
-        <div className="inline-block bg-gradient-to-r from-[#fbd3ee] to-[#a3c2fe] p-[3px] rounded-full">
-          {/* ② 内側のボタンは単色背景 */}
-          <button
-            onClick={handleShowMore}
-            // もともとのクラスに加えて、グラデーション境界線が見やすいよう border は削除
-            className="bg-[#f2f3ff] text-[#736b99] px-12 rounded-full border-4 border-transparent"
-          >
-            {showMore ? '閉じる' : 'もっと見る'}
-          </button>
-        </div>
+      <div className="mt-8 inline-block w-full rounded-full bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] p-1">
+        <button
+          onClick={handleShowMore}
+          className="w-full bg-[#f2f3ff] text-[#736b99] px-12 py-2 rounded-full"
+        >
+          {showMore ? '閉じる' : 'もっと見る'}
+        </button>
       </div>
-
       {/* オーバーレイ */}
       {selectedImage && (
         <div

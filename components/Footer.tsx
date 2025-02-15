@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="p-4 bg-gray-100">
+    <footer className="p-4 bg-gray-100 max-w-screen-md mx-auto">
       <div className="max-w-screen-md mx-auto">
         <div className="m-8">
           <h4 className="font-bold mb-2">トップ</h4>
@@ -11,7 +11,7 @@ export default function Footer() {
               <a href="#about-work" className="block">お仕事内容</a>
             </li>
             <li>
-              <a href="#feti-model" className="block">フェチモデルとは</a>
+              <a href="#fetimodel" className="block">フェチモデルとは</a>
             </li>
             <li>
               <a href="#salary" className="block">お給料について</a>
@@ -54,7 +54,8 @@ export default function Footer() {
           <h4 className="font-bold mb-2">規約</h4>
           <ul className="space-y-4 list-inside">
             <li>
-              <a href="#" className="block">プライバシーポリシー</a>
+              {/* <a href="/privacy-policy" className="block">プライバシーポリシー</a> */}
+              <a href="https://o-charge.net/pc/privacy.html" className="block">プライバシーポリシー</a>
             </li>
 
           </ul>

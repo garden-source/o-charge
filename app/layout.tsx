@@ -1,5 +1,6 @@
 // app/layout.tsx
 import "./globals.css";  // 必要に応じてグローバルCSS
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FooterMenu from "@/components/FooterMenu";
@@ -7,25 +8,19 @@ import FooterMenu from "@/components/FooterMenu";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "フェチモデル募集サイト",
-  description: "フェチモデル募集サイトです。",
-  additionalMetaTags: [
-    {
-      name: "color-scheme",
-      content: "light",
-    },
-  ],
+  title: "高収入モデルアルバイトのおさいふチャージ！",
+  description: "フェチ系パーツモデルのアルバイトで高収入！高収入モデルのお仕事ならおさいふチャージへどうぞ！",
   openGraph: {
-    title: "フェチモデル募集サイト",
-    description: "フェチモデル募集サイトです。",
-    url: "https://www.yourdomain.com/",
-    siteName: "フェチモデル募集サイト",
+    title: "高収入モデルアルバイトのおさいふチャージ！",
+    description: "フェチ系パーツモデルのアルバイトで高収入！高収入モデルのお仕事ならおさいふチャージへどうぞ！",
+    url: "https://o-charge.net/",
+    siteName: "高収入モデルアルバイトのおさいふチャージ！",
     images: [
       {
-        url: "https://www.yourdomain.com/images/og-image.jpg",
+        url: "https://res.cloudinary.com/dvwy63ef7/image/upload/v1/images/1-Hero/top_wllyhi?_a=BAVAZGIB0",
         width: 800,
         height: 600,
-        alt: "フェチモデル募集サイトのOG画像",
+        alt: "高収入モデルアルバイトのおさいふチャージ！",
       },
     ],
     locale: "ja_JP",
@@ -33,13 +28,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourtwitterhandle",
-    title: "フェチモデル募集サイト",
-    description: "フェチモデル募集サイトです。",
-    images: ["https://www.yourdomain.com/images/twitter-image.jpg"],
+    site: "@OsaifuCharge",
+    title: "高収入モデルアルバイトのおさいふチャージ！",
+    description: "フェチ系パーツモデルのアルバイトで高収入！高収入モデルのお仕事ならおさいふチャージへどうぞ！",
+    images: ["https://res.cloudinary.com/dvwy63ef7/image/upload/v1/images/1-Hero/top_wllyhi?_a=BAVAZGIB0"],
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -48,6 +42,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <Script
+          src="https://sdk.form.run/js/v2/formrun.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body>
         <Header />
         <main className="mt-[60px]">
@@ -57,6 +57,6 @@ export default function RootLayout({
         {/* フッターメニュー (SNSリンクなど) */}
         <FooterMenu />
       </body>
-    </html >
+    </html>
   );
 }

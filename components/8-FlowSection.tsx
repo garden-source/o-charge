@@ -143,64 +143,88 @@ export default function FlowSection() {
       {/* メールでご応募フォーム */}
       <div className="mx-auto max-w-md p-4 mt-8">
         <h4 className="text-lg font-bold mb-4 underline">メールでご応募</h4>
+        <form
+          className="formrun"
+          action="https://form.run/api/v1/r/02o2c0dfcawwxwkelttbi9ll"
+          method="post"
+        >
+          <div className="mb-4">
+            <label className="block mb-1">お名前</label>
+            <input
+              name="お名前"
+              type="text"
+              className="w-full border border-gray-300 rounded-xl p-2"
+              placeholder=""
+            />
+          </div>
 
-        {/* お名前 */}
-        <div className="mb-4">
-          <label htmlFor="name" className="block mb-1">
-            お名前（ニックネーム可）
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="w-full border border-gray-300 rounded-xl p-2 focus:outline-none focus:border-pink-400"
-            placeholder=""
-          />
-        </div>
+          <div className="mb-4">
+            <label className="block mb-1">メールアドレス [必須]</label>
+            <input
+              name="メールアドレス"
+              type="text"
+              data-formrun-type="email"
+              data-formrun-required
+              className="w-full border border-gray-300 rounded-xl p-2"
+              placeholder="xxxx@yyy.com"
+            />
+            <div
+              data-formrun-show-if-error="メールアドレス"
+              className="text-sm text-red-500"
+            >
+              メールアドレスを正しく入力してください
+            </div>
+          </div>
 
-        {/* メールアドレス */}
-        <div className="mb-4">
-          <label htmlFor="email" className="block mb-1">
-            メールアドレス
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="w-full border border-gray-300 rounded-xl p-2 focus:outline-none focus:border-pink-400"
-            placeholder="xxxx@yyy.com"
-          />
-          <p className="text-sm text-gray-600 mt-1">
-            ※ iCloud アドレスの方はこちらからのお返事が届きませんので、
-            <br />
-            他のメールアドレスか、LINE にてご応募ください。
-          </p>
-        </div>
+          <div className="mb-4">
+            <label className="block mb-1">内容 [必須]</label>
+            <textarea
+              name="お問い合わせ"
+              data-formrun-required
+              rows={4}
+              className="w-full border border-gray-300 rounded-xl p-2"
+              placeholder="例：パーツモデル希望"
+            ></textarea>
+            <div
+              data-formrun-show-if-error="お問い合わせ"
+              className="text-sm text-red-500"
+            >
+              お問い合わせ内容を入力してください
+            </div>
+          </div>
 
-        {/* 内容 */}
-        <div className="mb-4">
-          <label htmlFor="content" className="block mb-1 font-semibold">
-            内容
-          </label>
-          <textarea
-            id="content"
-            rows={4}
-            className="w-full border border-gray-300 rounded-xl p-2 focus:outline-none focus:border-pink-400"
-            placeholder="「パーツモデル希望」と一言打ち込んでいただければご応募完了とさせていただきます。"
-          />
-        </div>
+          {/* ボット投稿対策用の隠しフィールド */}
+          <div className="_formrun_gotcha">
+            <style media="screen">{`
+              ._formrun_gotcha {
+                position: absolute !important;
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+              }
+            `}</style>
+            <label htmlFor="_formrun_gotcha">
+              If you are a human, ignore this field
+            </label>
+            <input
+              type="text"
+              name="_formrun_gotcha"
+              id="_formrun_gotcha"
+              tabIndex={-1}
+            />
+          </div>
 
-        {/* 送信ボタン */}
-        <div className="text-center mt-4">
-          {/* ① ボタンを包む div でグラデーション枠を表現 */}
-          <div className="inline-block bg-gradient-to-r from-[#fbd3ee] to-[#a3c2fe] p-[3px] rounded-full">
-            {/* ② 内側のボタンは単色背景 */}
+          <div className="inline-block w-full rounded-full bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] p-1">
             <button
-              type="button"
-              className="bg-[#f2f3ff] text-[#736b99] px-12 py-2 rounded-full border-4 border-transparent"
+              type="submit"
+              data-formrun-error-text="未入力の項目があります"
+              data-formrun-submitting-text="送信中..."
+              className="w-full bg-[#f2f3ff] text-[#736b99] px-12 py-2 rounded-full"
             >
               送信する
             </button>
           </div>
-        </div>
+        </form>
       </div>
       {/* ==== ここからモーダル ==== */}
       {showOverlay && (
@@ -210,7 +234,7 @@ export default function FlowSection() {
         >
           <div
             className="relative max-w-[80vw] h-[calc(50vh)] m-4 mt-20"
-            onClick={(e) => e.stopPropagation()} 
+            onClick={(e) => e.stopPropagation()}
           >
             {/* 拡大画像 */}
             <CldImage

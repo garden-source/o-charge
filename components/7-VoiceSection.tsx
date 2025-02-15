@@ -60,14 +60,28 @@ export default function VoiceSection() {
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="OsaifuCharge"
-                options={{ height: 600, width: 300 }}
+                options={{ width: 300 }}
                 noHeader
                 noFooter
                 theme="light"
-                autoHeight={false}
+                autoHeight={true}
               />
             </div>
           </div>
+        </div>
+        <div className="text-center">
+          <p className="text-sm text-gray-600 mt-8 mb-2">
+            【画像をクリックして口コミを見る】
+          </p>
+          <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="" rel="noopener noreferrer">
+            <CldImage
+              src="images/7-Voice/hhgcj1kjzo8lhwcz9wul"
+              width={900}
+              height={500}
+              alt=""
+              className="mx-auto w-[450px] h-auto mb-4 cursor-pointer hover:opacity-80 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </SectionWrapper>

@@ -8,7 +8,7 @@ import { CldImage } from 'next-cloudinary';
 
 export default function FetiModelSection() {
   return (
-    <SectionWrapper id="fetimodel" backgroundColor="bg-purple">
+    <SectionWrapper id="feti-model" backgroundColor="bg-purple">
       {/* タイトル */}
       <SectionHeading>フェチモデルとは？</SectionHeading>
 

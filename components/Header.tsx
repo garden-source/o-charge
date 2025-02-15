@@ -10,17 +10,20 @@ export default function Header() {
   };
 
   return (
+
     <header className="bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] px-4 fixed top-0 left-0 w-full z-50">
       {/* ヘッダー内のレイアウトコンテナ */}
       <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
         {/* 左側: ロゴ画像 */}
-        <CldImage
-          src="images/Other/site-title_lfefuv"
-          width={300}
-          height={150}
-          alt="高収入パーツモデルアルバイトのおさいふチャージ"
-          className="w-[220px] h-auto p-0"
-        />
+        <a href="/">
+          <CldImage
+            src="images/Other/site-title_lfefuv"
+            width={300}
+            height={150}
+            alt="高収入パーツモデルアルバイトのおさいふチャージ"
+            className="w-[220px] h-auto p-0"
+          />
+        </a>
 
         {/* 右側: ハンバーガーアイコン（常に表示） */}
         <button
