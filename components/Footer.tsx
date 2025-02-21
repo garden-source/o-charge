@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-4 list-inside">
             <li>
               {/* <a href="/privacy-policy" className="block">プライバシーポリシー</a> */}
-              <a href="https://o-charge.net/pc/privacy.html" className="block">プライバシーポリシー</a>
+              <a href="/privacy-policy" className="block">プライバシーポリシー</a>
             </li>
 
           </ul>
