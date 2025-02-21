@@ -9,8 +9,11 @@ export default function Header() {
     setIsOpen((prev) => !prev);
   };
 
-  return (
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
+  return (
     <header className="bg-gradient-to-r from-[#f9daf2] to-[#dae6ff] px-4 fixed top-0 left-0 w-full z-50">
       {/* ヘッダー内のレイアウトコンテナ */}
       <div className="max-w-screen-md mx-auto flex items-center justify-between py-1">
@@ -48,42 +51,48 @@ export default function Header() {
         </button>
       </div>
 
-      {/* ハンバーガーメニュー (モバイル/PC問わずトグル表示) */}
+      {/* オーバーレイ（メニューが開いたときのみ表示） */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-30 z-40"
+          onClick={closeMenu}
+        />
+      )}
+
+      {/* ハンバーガーメニュー本体 (モバイル/PC問わずトグル表示) */}
       <nav
         className={`
           ${isOpen ? "block" : "hidden"}
           absolute top-[60px] right-4
           bg-[#4b4a4d] rounded
-          p-4
+          p-4 z-50
         `}
+        onClick={(e) => e.stopPropagation()}
       >
         <ul className="flex flex-col space-y-2">
-          <li>
-            <a href="#hero"></a>
+          <li className="border-b border-gray-400 pb-2">
+            <a href="/#about-work" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事内容</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#about-work" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事内容</a>
+            <a href="/#feti-model" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">フェチモデルとは</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#feti-model" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">フェチモデルとは</a>
+            <a href="/#salary" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料について</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#salary" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料について</a>
+            <a href="/#studio" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">スタジオ紹介</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#studio" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">スタジオ紹介</a>
+            <a href="/#assurance" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#assurance" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</a>
+            <a href="/#voice" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">先輩モデルさんの声</a>
           </li>
           <li className="border-b border-gray-400 pb-2">
-            <a href="#voice" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">先輩モデルさんの声</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="#flow" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">応募の流れ</a>
+            <a href="/#flow" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">応募の流れ</a>
           </li>
           <li className="">
-            <a href="#faq" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">よくあるご質問</a>
+            <a href="/#faq" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">よくあるご質問</a>
           </li>
         </ul>
       </nav>
