@@ -11,7 +11,7 @@ export default function Footer() {
               <a href="#about-work" className="block">お仕事内容</a>
             </li>
             <li>
-              <a href="#fetimodel" className="block">フェチモデルとは</a>
+              <a href="#feti-model" className="block">フェチモデルとは</a>
             </li>
             <li>
               <a href="#salary" className="block">お給料について</a>
