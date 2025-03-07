@@ -34,3 +34,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+> **注意**: `next.config.js` に `output: 'export'` の設定が必要です。
+
+### 2. FTPクライアントの準備
+
+お好みのFTPクライアントをインストールしてください（FileZilla、WinSCP、Cyberduckなど）。
+
+### 3. FTPサーバーへの接続
+
+FTPクライアントで以下の情報を使用して接続します：
+
+- ホスト: (FTPサーバーのアドレス)
+- ユーザー名: (提供されたユーザー名)
+- パスワード: (提供されたパスワード)
+- ポート: 21（通常のFTP）または22（SFTP）
+
+### 4. ファイルのアップロード
+
+1. ローカルの `out` ディレクトリ内のすべてのファイルを選択
+2. サーバー上の公開ディレクトリ（通常は `public_html`）にアップロード
+
+### 5. 更新の確認
+
+ウェブサイトにアクセスして、更新が正しく反映されていることを確認してください。

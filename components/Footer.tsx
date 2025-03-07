@@ -43,7 +43,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/osaifu_max/" className="block">Instagram</a>
             </li>
             <li>
-              <a href="https://tiktok.com/@osaifucharge.staff" className="block">Tik Tok</a>
+              <a href="https://tiktok.com/@osaifucharge" className="block">Tik Tok</a>
             </li>
             <li>
               <a href="https://kanto.qzin.jp/ocharge/?v=official" className="block">バニラサイト</a>
