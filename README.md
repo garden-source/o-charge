@@ -37,6 +37,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 > **注意**: `next.config.js` に `output: 'export'` の設定が必要です。
 
+# build
+npm run build
+
+
 ### 2. FTPクライアントの準備
 
 お好みのFTPクライアントをインストールしてください（FileZilla、WinSCP、Cyberduckなど）。
@@ -48,7 +52,6 @@ FTPクライアントで以下の情報を使用して接続します：
 - ホスト: (FTPサーバーのアドレス)
 - ユーザー名: (提供されたユーザー名)
 - パスワード: (提供されたパスワード)
-- ポート: 21（通常のFTP）または22（SFTP）
 
 ### 4. ファイルのアップロード
 
