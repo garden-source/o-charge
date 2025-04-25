@@ -89,22 +89,16 @@ export default function ThreeAssurancesPage() {
               characterSrc="images/other/feel_awate-right_jaddmq"
               characterAlt=""
             />
-            <SpeechBubbleRight
-              content={
-                <>
-                  できることなら接触がない高収入のお仕事をしたいなぁ
-                </>
-              }
-              characterSrc="images/other/feel_tameiki_otu0u4"
-              characterAlt=""
-            />
 
             <div className="mt-8 mb-8">
               <p className="leading-relaxed mb-4">
                 といった不安は、もちろんあるかと思いますが……
               </p>
               <p className="leading-relaxed mb-4">
-                おさいふチャージのこれまでの制作歴は2025年現在、25年目になりました。今までおよそ5000人ほど撮影し、ご出演いただいておりますが<span style={{ color: '#ef4444' }}>バレたことのない</span>ことがありません。
+                おさいふチャージのこれまでの制作歴は2025年現在、25年目になりました。今までおよそ5000人ほど撮影し、ご出演いただいておりますが<span style={{ fontWeight: 'bold' }}>バレたことがありません</span>。
+              </p>
+              <p className="leading-relaxed mb-4">
+                <span style={{ color: '#ef4444' }}>「バレたことのない」実績がある</span>のです。
               </p>
               <p className="leading-relaxed">
                 ここではおさいふチャージの身バレ対策についてご紹介させていただきます。
@@ -160,7 +154,7 @@ export default function ThreeAssurancesPage() {
               </p>
 
               <p className="leading-relaxed mb-4">
-                おさいふチャージはこのような方に向けた作品を制作しているので、<span style={{ color: '#ef4444' }}>そもそも見る人がめちゃくちゃ少ないのです！</span>
+                おさいふチャージはこのような方に向けた作品を制作しているので、<span style={{ fontWeight: 'bold' }}>そもそも見る人がめちゃくちゃ少ないのです！</span>
               </p>
             </div>
 
@@ -254,17 +248,20 @@ export default function ThreeAssurancesPage() {
               characterAlt=""
               bubbleBgColor="#ecfccb"
             />
+          </div>
+        </div>
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
-              <CldImage
-                src="images/anshin-anzen/kaizokuban-taisaku_rfa2de"
-                width={1200}
-                height={400}
-                alt="徹底した海賊版対策"
-                className="w-full h-auto"
-              />
-            </div>
-
+        <div className="max-w-3xl -mx-4 md:mx-auto">
+          <CldImage
+            src="images/anshin-anzen/kaizokuban-taisaku_rfa2de"
+            width={1200}
+            height={400}
+            alt="徹底した海賊版対策"
+            className="w-full h-auto"
+          />
+        </div>
+        <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
             <p className="leading-relaxed mb-4">
               販売者を悩ませる犯罪行為の海賊版。これは残念ながら私たちも被害を受けている現状にあります。
             </p>
@@ -274,7 +271,7 @@ export default function ThreeAssurancesPage() {
             </p>
 
             <p className="leading-relaxed mb-4">
-              おさいふチャージでは、<span style={{ color: '#ef4444' }}>私たちを信用してご利用いただいているモデル様に恥じないよう、徹底した海賊版対策</span>を行っております。
+              おさいふチャージでは、<span style={{ fontWeight: 'bold' }}>私たちを信用してご利用いただいているモデル様に恥じないよう、徹底した海賊版対策</span>を行っております。
             </p>
 
             <p className="leading-relaxed mb-4">

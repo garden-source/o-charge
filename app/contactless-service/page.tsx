@@ -83,7 +83,7 @@ export default function ThreeAssurancesPage() {
               }
               characterSrc="images/other/feel_awate-left_faxrj1"
               characterAlt=""
-              bubbleBgColor=""
+              bubbleBgColor="#fde0e0"
             />
             <SpeechBubbleRight
               content={
@@ -228,7 +228,7 @@ export default function ThreeAssurancesPage() {
               characterAlt=""
             />
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
+            <div className="p-8 max-w-3xl -mx-4 md:mx-auto">
               <CldImage
                 src="images/contactless-service/where_y8jaat"
                 width={1200}
@@ -237,16 +237,6 @@ export default function ThreeAssurancesPage() {
                 className="w-full h-auto"
               />
             </div>
-
-            <SpeechBubbleRight
-              content={
-                <>
-                  またアダルト動画サイトの閲覧数はNetflixよりはるかに上回るアクセス数を維持しているよっ！
-                </>
-              }
-              characterSrc="images/other/feel_interi_hsrskl"
-              characterAlt=""
-            />
 
             <p className="leading-relaxed mb-4">
               おさいふチャージが運営する撮影スタジオの<span style={{ color: '#ef4444' }}>最寄り駅は埼玉県・さいたま市にある</span><span style={{ color: '#ef4444', fontWeight: 'bold' }}>「浦和駅・武蔵浦和駅」</span>です。
@@ -313,7 +303,10 @@ export default function ThreeAssurancesPage() {
               埋まりが大変早くなっておりますが、モデル様のご予定やご都合によってはご案内できることもあるため、お気軽にご相談下されば幸いです。
             </p>
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
+            <p className="leading-relaxed mb-4">
+              信頼のおけるスタジオとして感じていただけるように努め、モデルの皆様が抱えるお金の悩みやご相談にも真摯に対応させていただきます。
+            </p>
+            <div className="p-8max-w-3xl -mx-4 md:mx-auto">
               <CldImage
                 src="images/contactless-service/message_vmj8fi"
                 width={1200}
@@ -323,7 +316,7 @@ export default function ThreeAssurancesPage() {
               />
             </div>
 
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg font-bold leading-relaxed mb-4 text-[#72617c]">
               ⭐️ ご挨拶
             </p>
 
@@ -363,7 +356,8 @@ export default function ThreeAssurancesPage() {
               性行為、一切必要ないお仕事だけご用意してお待ち致しております。
             </p>
 
-            <hr className="my-8" />
+            <hr className="border-0 border-b-4 border-dotted border-gray-400 my-8 text-[#72617c]" />
+
 
             <p className="leading-relaxed mb-4">
               支えてくださっていたリピーター様への感謝を込めて、報酬のアップを実現いたしました。
@@ -395,11 +389,41 @@ export default function ThreeAssurancesPage() {
               ※他社や他SNSでこちらの名称の真似や、文言を多数引用している所がありますのでご注意ください。
             </p>
 
-            <hr className="my-8" />
+            <hr className="border-0 border-b-4 border-dotted border-gray-400 my-8 text-[#72617c]" />
 
             <p className="leading-relaxed mb-4">
               最新の口コミはSNSまたはバニラサイトをチェック←
             </p>
+
+            <div className="flex space-x-8 mb-6 justify-center">
+              <a href="https://x.com/OsaifuCharge" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-x_d9tkzh"
+                  width={70}
+                  height={70}
+                  alt="Twitter/X"
+                  className="rounded-full"
+                />
+              </a>
+              <a href="https://www.instagram.com/osaifu_max/" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-insta_r5gxga"
+                  width={70}
+                  height={70}
+                  alt="Instagram"
+                  className="rounded-full"
+                />
+              </a>
+              <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-vanila_tat7aq"
+                  width={70}
+                  height={70}
+                  alt="Like"
+                  className=""
+                />
+              </a>
+            </div>
 
           </div>
         </div>

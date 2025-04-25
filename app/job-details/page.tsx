@@ -69,6 +69,7 @@ export default function ThreeAssurancesPage() {
                       }
                     }}
                     style={{ color: '#f6a1bd', cursor: 'pointer' }}
+                    className="inline-block py-2 border-b-dotted border-[#f6a1bd]"
                   >①チラ見せ風撮影</a><br />
                   <a
                     href="#onara-satuei"
@@ -84,6 +85,7 @@ export default function ThreeAssurancesPage() {
                       }
                     }}
                     style={{ color: '#7ba67f', cursor: 'pointer' }}
+                    className="inline-block py-2 border-b-dotted border-[#7ba67f]"
                   >②おなら撮影</a><br />
                   <a
                     href="#toire-satuei"
@@ -99,6 +101,7 @@ export default function ThreeAssurancesPage() {
                       }
                     }}
                     style={{ color: '#778ce7', cursor: 'pointer' }}
+                    className="inline-block py-2 border-b-dotted border-[#778ce7]"
                   >③トイレ系撮影</a>
                 </p>
 
@@ -240,7 +243,7 @@ export default function ThreeAssurancesPage() {
                     <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">おならフェチに向けたコンテンツ</span>
                       <br />
                       <span className="font-normal text-[#3366cc] text-base">待機中に不意に出てしまったおならを撮るなど</span></p>
-                    <p className="mb-4 text-sm text-[#7ba67f]">撮影時間：5~10分位</p>
+                    <p className="mb-4 text-sm text-[#7ba67f]">撮影時間：15～20分位</p>
 
                     <p className="mb-4">
                       世の中には女性の「おなら」にすらフェチズムを感じてしまう人たちがいることをご存知でしょうか…！
@@ -325,26 +328,6 @@ export default function ThreeAssurancesPage() {
                     bubbleBgColor="#ecfccb"
                   />
 
-                  <SpeechBubbleLeft
-                    content={
-                      <>
-                        ラッキースケベがない少年誌って確かに見たことないかも笑
-                      </>
-                    }
-                    characterSrc="images/other/usamin_zbf3hh"
-                    characterAlt=""
-                    bubbleBgColor="#ecfccb"
-                  />
-
-                  <SpeechBubbleRight
-                    content={
-                      <>
-                        実際には絶対にあり得ないからこそ、そういう夢の詰まった作品はロマンがあるみたいだよっ！
-                      </>
-                    }
-                    characterSrc="images/other/feel_zenshin_f7z4op"
-                    characterAlt=""
-                  />
                 </div>
               </div>
 
@@ -398,8 +381,8 @@ export default function ThreeAssurancesPage() {
                 <div className="border-t border-[#778ce7] border-dotted my-3"></div>
               </div>
 
-              <div className="max-w-3xl mx-auto p-6">
-                <div className="p-6">
+              <div className="max-w-3xl mx-auto px-6">
+                <div className="px-6">
                   <p className="">
                     <span className="font-bold text-[#ff7bac] text-xl">
                       尿意があるときの撮影
@@ -420,7 +403,8 @@ export default function ThreeAssurancesPage() {
                 <SpeechBubbleRight
                   content={
                     <>
-                      詳細な金額が気になる場合は是非お問合せ下さい♡                  </>
+                      詳細な金額が気になる場合は是非お問合せ下さい☆
+                    </>
                   }
                   characterSrc="images/other/feel_zenshin_f7z4op"
                   characterAlt=""
@@ -618,6 +602,44 @@ export default function ThreeAssurancesPage() {
               </div>
             </div>
           </div>
+
+          <div className="max-w-md mx-auto space-y-6 pt-8">
+            <div className="max-w-3xl mx-auto">
+              <p className="leading-relaxed mb-4 text-center">
+                最新の口コミはSNSまたはバニラサイトをチェック←
+              </p>
+
+              <div className="flex space-x-8 mb-6 justify-center">
+                <a href="https://x.com/OsaifuCharge" target="_blank" rel="noopener noreferrer" className="block">
+                  <CldImage
+                    src="images/other/icon-x_d9tkzh"
+                    width={70}
+                    height={70}
+                    alt="Twitter/X"
+                    className="rounded-full"
+                  />
+                </a>
+                <a href="https://www.instagram.com/osaifu_max/" target="_blank" rel="noopener noreferrer" className="block">
+                  <CldImage
+                    src="images/other/icon-insta_r5gxga"
+                    width={70}
+                    height={70}
+                    alt="Instagram"
+                    className="rounded-full"
+                  />
+                </a>
+                <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="_blank" rel="noopener noreferrer" className="block">
+                  <CldImage
+                    src="images/other/icon-vanila_tat7aq"
+                    width={70}
+                    height={70}
+                    alt="Like"
+                    className=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </SectionWrapper >
 
@@ -631,56 +653,11 @@ export default function ThreeAssurancesPage() {
                   <div className="border-b-2 border-gray-400 border-dotted pb-2"></div>
                 </div>
               </div>
-            </div>
-            <SpeechBubbleLeft
-              content={
-                <>
-                  即日で貰えるのは凄くうれしいけど、裏がありそうでちょっと怖いな…
-                </>
-              }
-              characterSrc="images/other/usamin_zbf3hh"
-              characterAlt=""
-              bubbleBgColor="#ecfccb"
-            />
-
-            <SpeechBubbleRight
-              content={
-                <>
-                  これにはちゃんとした理由があるよっ！
-                  悪質なところもあるから騙されないように説明しよう☆
-                </>
-              }
-              characterSrc="images/other/feel_zenshin-g_ccwxxa"
-              characterAlt=""
-            />
-          </div>
-          <div className="max-w-3xl mx-auto p-6">
-            <div className="p-6">
-              <p className="mb-4">
-                高収入フェチ・パーツモデル専門のアルバイトである『おさいふチャージ』はプロダクション事務所ではなく、
-                <span style={{ color: '#ef4444' }}>コンテンツ制作メーカーになります！</span>
-              </p>
-
-              <p className="mb-4">
-                急にお金が必要になり、高収入のバイトを探してみたけれど…実際の支払は日払いでも手渡しでもなかった…！
-              </p>
-
-              <p className="mb-4">
-                同人AVで怖い目に合ったり、話と違うことをされたり…。
-              </p>
-
-              <p className="mb-4">
-                そんな心配はおさいふチャージのパーツモデル、フェチモデル案件では<span style={{ color: '#ef4444' }}>絶対に発生致しません×</span>
-              </p>
-
-              <p className="mb-4">
-                やっぱりバイトしたならすぐにアルバイト代は欲しいですよね！
-              </p>
 
               <SpeechBubbleLeft
                 content={
                   <>
-                    いろんな会社を通らないから即日支払いができるってことなんだね！
+                    即日で貰えるのは凄くうれしいけど、裏がありそうでちょっと怖いな…
                   </>
                 }
                 characterSrc="images/other/usamin_zbf3hh"
@@ -691,13 +668,86 @@ export default function ThreeAssurancesPage() {
               <SpeechBubbleRight
                 content={
                   <>
-                    脱！金欠回避！！にうってつけだよねっ
+                    これにはちゃんとした理由があるよっ！
+                    悪質なところもあるから騙されないように説明しよう☆
                   </>
                 }
                 characterSrc="images/other/feel_zenshin-g_ccwxxa"
                 characterAlt=""
               />
             </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto p-6">
+            <p className="mb-4">
+              高収入フェチ・パーツモデル専門のアルバイトである『おさいふチャージ』はプロダクション事務所ではなく、
+              <span style={{ color: '#ef4444' }}>コンテンツ制作メーカーになります！</span>
+            </p>
+
+            <p className="mb-4">
+              プロダクションというのは、モデルの皆様にお仕事を斡旋してくれる場所です。
+            </p>
+
+            <p className="mb-4">
+              プロダクションではどのメーカーに派遣されるか？どんな仕事をするか？によってお給料日も異なってくるようです。
+            </p>
+
+            <p className="mb-4">
+              おさいふチャージは専門の撮影スタジオを有する制作会社なので、図の様に様々な会社や人を経由せず
+              <span style={{ color: '#ef4444' }}>【直接フェチモデル・パーツモデルさんへアルバイト代をお渡しする】手渡し・日払い制</span>
+              を取っています。
+            </p>
+
+            <div className="flex justify-center my-6">
+              <CldImage
+                src="images/job-details/sokuzitu_b3wqug"
+                width={500}
+                height={350}
+                alt="即日支払いの仕組み"
+                className="w-full max-w-md"
+              />
+            </div>
+
+            <p className="mb-4">
+              急にお金が必要になり、高収入のバイトを探してみたけれど…実際の支払は日払いでも手渡しでもなかった…！
+            </p>
+
+            <p className="mb-4">
+              同人AVで怖い目に合ったり、話と違うことをされたり…。
+            </p>
+
+            <p className="mb-4">
+              そんな心配はおさいふチャージのパーツモデル、フェチモデル案件では<span style={{ color: '#ef4444' }}>絶対に発生致しません×</span>
+            </p>
+
+            <p className="mb-4">
+              やっぱりバイトしたならすぐにアルバイト代は欲しいですよね！
+            </p>
+
+            <SpeechBubbleLeft
+              content={
+                <>
+                  いろんな会社を通らないから即日支払いができるってことなんだね！
+                </>
+              }
+              characterSrc="images/other/usamin_zbf3hh"
+              characterAlt=""
+              bubbleBgColor="#ecfccb"
+            />
+
+            <SpeechBubbleRight
+              content={
+                <>
+                  脱！金欠回避！！にうってつけだよねっ
+                </>
+              }
+              characterSrc="images/other/feel_zenshin-g_ccwxxa"
+              characterAlt=""
+            />
+          </div>
+
+          <div className="text-center mt-6">
+            <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
           </div>
         </div>
       </SectionWrapper >
