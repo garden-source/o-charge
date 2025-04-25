@@ -91,6 +91,7 @@ export default function ThreeAssurancesPage() {
               content="接触なしの添い寝店応募したら、デリヘルのお店だった…"
               characterSrc="images/other/feel_ikari_jsymuo"
               characterAlt=""
+              bubbleBgColor="#fde0e0"
             />
             <SpeechBubbleRight
               content="チャトレをノンアダでしてもお客さんがつかないし、知り合いに出会うリスクが高くて怖いなぁ"
@@ -101,6 +102,7 @@ export default function ThreeAssurancesPage() {
               content="やっぱりエッチがないと稼げないの？？？"
               characterSrc="images/other/feel_awate-left_faxrj1"
               characterAlt=""
+              bubbleBgColor="#fde0e0"
             />
 
             <div className="mt-8 mb-8">
@@ -126,98 +128,100 @@ export default function ThreeAssurancesPage() {
             className="w-full h-auto"
           />
         </div>
-        
-        <div className="max-w-3xl mx-auto">
-          <SpeechBubbleRight
-            content="できることなら接触がない高収入のお仕事をしたいなぁ"
-            characterSrc="images/other/feel_tameiki_otu0u4"
-            characterAlt=""
-          />
 
-          <div className="mt-8 mb-8">
-            <p className="leading-relaxed mb-4">
-              おさいふチャージに来ていただいているモデル様からよくこういったお声を伺うことがあります。
-            </p>
-            <p className="leading-relaxed mb-4">
-              昼職とは別に、チャットレディやガールズバーで働いてるけど、チップがない日は全く稼げない…など。
+        <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
+            <SpeechBubbleRight
+              content="できることなら接触がない高収入のお仕事をしたいなぁ"
+              characterSrc="images/other/feel_tameiki_otu0u4"
+              characterAlt=""
+            />
 
-            </p>
-            <p className="leading-relaxed">
-              実際、
-              <span className="font-bold relative inline-block">
-                <span className="absolute bottom-0 left-0 w-full h-[60%] z-1" style={{ backgroundColor: '#fefdb5', opacity: 0.8 }}></span>
-                <span className="relative z-2">ソフトサービスでは稼ぎにくくなった</span>
-              </span>
-              ことは事実です。
-            </p>
+            <div className="mt-8 mb-8">
+              <p className="leading-relaxed mb-4">
+                おさいふチャージに来ていただいているモデル様からよくこういったお声を伺うことがあります。
+              </p>
+              <p className="leading-relaxed mb-4">
+                昼職とは別に、チャットレディやガールズバーで働いてるけど、チップがない日は全く稼げない…など。
 
-            {/* 枠線付きボックス */}
-            <div className="mt-10 mb-8 relative">
-              {/* 見出し部分 - 枠の上に重ねる */}
-              <div className="absolute -top-2.5 left-8 px-2 bg-[#fff9f7]">
-                <p className="text-md font-bold whitespace-nowrap text-[#a27b9d]">ソフトサービスで稼ぎにくくなった理由</p>
-              </div>
+              </p>
+              <p className="leading-relaxed">
+                実際、
+                <span className="font-bold relative inline-block">
+                  <span className="absolute bottom-0 left-0 w-full h-[60%] z-1" style={{ backgroundColor: '#fefdb5', opacity: 0.8 }}></span>
+                  <span className="relative z-2">ソフトサービスでは稼ぎにくくなった</span>
+                </span>
+                ことは事実です。
+              </p>
 
-              <div className="border-4 border-[#a27b9d] p-5 pt-6">
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-purple-800 mr-2">•</span>
-                    <span>日本全体が<span className="text-blue-500">不景気傾向</span>にある</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-800 mr-2">•</span>
-                    <span>風俗系の夜職で働く女の子が急増したため<span className="text-blue-500">競争がより激しく</span>なった</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-800 mr-2">•</span>
-                    <span>業界全体の<span className="text-blue-500">低単価化</span>が止まらない</span>
-                  </li>
-                </ul>
+              {/* 枠線付きボックス */}
+              <div className="mt-10 mb-8 relative">
+                {/* 見出し部分 - 枠の上に重ねる */}
+                <div className="absolute -top-2.5 left-8 px-2 bg-[#fff9f7]">
+                  <p className="text-md font-bold whitespace-nowrap text-[#a27b9d]">ソフトサービスで稼ぎにくくなった理由</p>
+                </div>
+
+                <div className="border-4 border-[#a27b9d] p-5 pt-6">
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-purple-800 mr-2">•</span>
+                      <span>日本全体が<span className="text-blue-500">不景気傾向</span>にある</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-800 mr-2">•</span>
+                      <span>風俗系の夜職で働く女の子が急増したため<span className="text-blue-500">競争がより激しく</span>なった</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-800 mr-2">•</span>
+                      <span>業界全体の<span className="text-blue-500">低単価化</span>が止まらない</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <SpeechBubbleLeft
-            content="そもそも『ソフトサービス』ってどんなものなの？"
-            characterSrc="images/other/usamin_zbf3hh"
-            characterAlt=""
-            bubbleBgColor="#ecfccb"
-          />
+            <SpeechBubbleLeft
+              content="そもそも『ソフトサービス』ってどんなものなの？"
+              characterSrc="images/other/usamin_zbf3hh"
+              characterAlt=""
+              bubbleBgColor="#ecfccb"
+            />
 
-          <SpeechBubbleRight
-            content={`一般的な『ソフトサービス』は
+            <SpeechBubbleRight
+              content={`一般的な『ソフトサービス』は
               🩵 お客様からのボディタッチがない
               🩵 キス・フェラ・素股などがなく、
               　　手だけで行うサービス
               🩵服を脱がなくてOK
               などがあるよっ！`}
-            characterSrc="images/other/feel_glasan_u7zps4"
-            characterAlt=""
-          />
+              characterSrc="images/other/feel_glasan_u7zps4"
+              characterAlt=""
+            />
 
-          <SpeechBubbleRight
-            content="『ソフトサービス』の定義ははっきりときまっているわけではないのがややこしいところなんだけどね…"
-            characterSrc="images/other/feel_glasan_u7zps4"
-            characterAlt=""
-          />
+            <SpeechBubbleRight
+              content="『ソフトサービス』の定義ははっきりときまっているわけではないのがややこしいところなんだけどね…"
+              characterSrc="images/other/feel_glasan_u7zps4"
+              characterAlt=""
+            />
 
-          <SpeechBubbleLeft
-            content="たしかにお店や自分がどんなサービスをソフトと思うかはその人次第だもんね"
-            characterSrc="images/other/usamin_zbf3hh"
-            characterAlt=""
-            bubbleBgColor="#ecfccb"
-          />
+            <SpeechBubbleLeft
+              content="たしかにお店や自分がどんなサービスをソフトと思うかはその人次第だもんね"
+              characterSrc="images/other/usamin_zbf3hh"
+              characterAlt=""
+              bubbleBgColor="#ecfccb"
+            />
 
-          <div className="mt-8 mb-8">
-            <p className="leading-relaxed mb-4">
-              いざ高収入系のお仕事を探す際、ソフトサービスのオナクラやメンズエステ、チャットレディ等に挑戦したくなりますよね。
-            </p>
-            <p className="leading-relaxed mb-4">
-              しかし敷居が低い分、より競争が激しく、6時間待機してもお客がつかないなんてことはよくある話。
-            </p>
-            <p className="leading-relaxed">
-              また昨今問題視されている立ちんぼの影響で、本番行為まで1～2万円で行えてしまうことが増え、業界としての需要が落ち込んでいるのが現状です。
-            </p>
+            <div className="mt-8 mb-8">
+              <p className="leading-relaxed mb-4">
+                いざ高収入系のお仕事を探す際、ソフトサービスのオナクラやメンズエステ、チャットレディ等に挑戦したくなりますよね。
+              </p>
+              <p className="leading-relaxed mb-4">
+                しかし敷居が低い分、より競争が激しく、6時間待機してもお客がつかないなんてことはよくある話。
+              </p>
+              <p className="leading-relaxed">
+                また昨今問題視されている立ちんぼの影響で、本番行為まで1～2万円で行えてしまうことが増え、業界としての需要が落ち込んでいるのが現状です。
+              </p>
+            </div>
           </div>
         </div>
 
@@ -309,6 +313,41 @@ export default function ThreeAssurancesPage() {
             気になることはお気軽にご相談いただければと思います◎
           </p>
         </div>
+        <div className="pt-8 max-w-md mx-auto space-y-6">
+          <h3 className="text-3xl font-bold m-2">他の記事はこちらから</h3>
+
+          <div className="space-y-4">
+            <div className="rounded-lg p-4">
+              <a href="/contactless-service">
+                <CldImage
+                  src="images/other/bunner-m_dgsxyf"
+                  width={800}
+                  height={300}
+                  alt="メンフレをおさらば！！"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="rounded-lg p-4">
+              <a href="/anshin-anzen">
+                <CldImage
+                  src="images/other/bunner-mb_u3ojq4"
+                  width={800}
+                  height={300}
+                  alt="身バレがトラウマに..."
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="text-center mt-6">
+              <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+            </div>
+          </div>
+
+        </div>
+
       </SectionWrapper>
     </>
   )

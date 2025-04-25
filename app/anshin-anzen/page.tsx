@@ -457,7 +457,40 @@ export default function ThreeAssurancesPage() {
           />
         </div>
 
+        <div className="pt-8 max-w-md mx-auto space-y-6">
+          <h3 className="text-3xl font-bold m-2">他の記事はこちらから</h3>
 
+          <div className="space-y-4">
+            <div className="rounded-lg p-4">
+              <a href="/contactless-service">
+                <CldImage
+                  src="images/other/bunner-m_dgsxyf"
+                  width={800}
+                  height={300}
+                  alt="メンフレをおさらば！！"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="rounded-lg p-4">
+              <a href="/three-assurances">
+                <CldImage
+                  src="images/other/bunner-h_m7649c"
+                  width={800}
+                  height={300}
+                  alt="Hなことしたくない"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="text-center mt-6">
+              <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+            </div>
+          </div>
+
+        </div>
       </SectionWrapper >
     </>
   )

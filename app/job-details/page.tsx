@@ -55,9 +55,51 @@ export default function ThreeAssurancesPage() {
                 </p>
 
                 <p className="leading-relaxed mb-4">
-                  <span style={{ color: '#f6a1bd' }}>①チラ見せ風撮影</span><br />
-                  <span style={{ color: '#7ba67f' }}>②おなら撮影</span><br />
-                  <span style={{ color: '#778ce7' }}>③トイレ系撮影</span>
+                  <a
+                    href="#chira-mise"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('chira-mise');
+                      if (element) {
+                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                          top: offsetTop,
+                          behavior: 'smooth'
+                        });
+                      }
+                    }}
+                    style={{ color: '#f6a1bd', cursor: 'pointer' }}
+                  >①チラ見せ風撮影</a><br />
+                  <a
+                    href="#onara-satuei"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('onara-satuei');
+                      if (element) {
+                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                          top: offsetTop,
+                          behavior: 'smooth'
+                        });
+                      }
+                    }}
+                    style={{ color: '#7ba67f', cursor: 'pointer' }}
+                  >②おなら撮影</a><br />
+                  <a
+                    href="#toire-satuei"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('toire-satuei');
+                      if (element) {
+                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                          top: offsetTop,
+                          behavior: 'smooth'
+                        });
+                      }
+                    }}
+                    style={{ color: '#778ce7', cursor: 'pointer' }}
+                  >③トイレ系撮影</a>
                 </p>
 
                 <p className="leading-relaxed mb-4">
@@ -91,7 +133,7 @@ export default function ThreeAssurancesPage() {
           </div>
           <div className="max-w-3xl -mx-4 md:mx-auto">
             <div className="bg-[#fff] p-3">
-              <h3 className="text-xl font-bold text-[#ff7bac]">①チラ見せ風撮影 例</h3>
+              <h3 className="text-xl font-bold text-[#ff7bac]" id="chira-mise">①チラ見せ風撮影 例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
               <div className="max-w-3xl mx-auto p-6">
@@ -186,7 +228,7 @@ export default function ThreeAssurancesPage() {
 
           <div className="max-w-3xl -mx-4 md:mx-auto">
             <div className="bg-[#fff] p-3">
-              <h3 className="text-xl font-bold text-[#7ba67f]">②おなら撮影　例</h3>
+              <h3 className="text-xl font-bold text-[#7ba67f]" id="onara-satuei">②おなら撮影　例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
               <div className="max-w-3xl mx-auto p-6">
@@ -311,7 +353,7 @@ export default function ThreeAssurancesPage() {
 
           <div className="max-w-3xl -mx-4 md:mx-auto">
             <div className="bg-[#fff] p-3">
-              <h3 className="text-xl font-bold text-[#778ce7]">③トイレ系撮影　例</h3>
+              <h3 className="text-xl font-bold text-[#778ce7]" id="toire-satuei">③トイレ系撮影　例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
               <div className="max-w-3xl mx-auto p-6">
