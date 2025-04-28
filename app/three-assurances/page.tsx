@@ -16,7 +16,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-pink-50 rounded-lg p-6">
+            <div className="bg-pink-50 rounded-lg">
               <h1 className="text-3xl font-bold text-center mb-2">アダルト行為一切なし！</h1>
               <H3HeadingSmall>ヘルスがなくても稼げる時代到来！？</H3HeadingSmall>
 
@@ -56,31 +56,19 @@ export default function ThreeAssurancesPage() {
                   <ul className="mb-4 space-y-2">
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-2">•</span>
-                      <span className="font-medium relative">
-                        <span className="absolute bottom-0 left-0 w-full h-[60%] z-0" style={{ backgroundColor: '#fefdb5' }}></span>
-                        <span className="relative z-10">完全非接触！</span>
-                      </span>
+                      <span className="font-medium" style={{ color: '#ea9500' }}>完全非接触！</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-2">•</span>
-                      <span className="font-medium relative">
-                        <span className="absolute bottom-0 left-0 w-full h-[60%] z-0" style={{ backgroundColor: '#fefdb5' }}></span>
-                        <span className="relative z-10">性病リスクはもちろん0！</span>
-                      </span>
+                      <span className="font-medium" style={{ color: '#ea9500' }}>性病リスクはもちろん0！</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-2">•</span>
-                      <span className="font-medium relative">
-                        <span className="absolute bottom-0 left-0 w-full h-[60%] z-0" style={{ backgroundColor: '#fefdb5' }}></span>
-                        <span className="relative z-10">男性器を見せられることもなし！</span>
-                      </span>
+                      <span className="font-medium" style={{ color: '#ea9500' }}>男性器を見せられることもなし！</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-2">•</span>
-                      <span className="font-medium relative">
-                        <span className="absolute bottom-0 left-0 w-full h-[60%] z-0" style={{ backgroundColor: '#fefdb5' }}></span>
-                        <span className="relative z-10">接客じゃないから病みにくい！</span>
-                      </span>
+                      <span className="font-medium" style={{ color: '#ea9500' }}>接客じゃないから病みにくい！</span>
                     </li>
                   </ul>
 
@@ -162,7 +150,7 @@ export default function ThreeAssurancesPage() {
               {/* 枠線付きボックス */}
               <div className="mt-10 mb-8 relative">
                 {/* 見出し部分 - 枠の上に重ねる */}
-                <div className="absolute -top-2.5 left-8 px-2 bg-[#fff9f7]">
+                <div className="absolute -top-2.5 left-1/2 transform -translate-x-1/2 px-2 bg-[#fff9f7]">
                   <p className="text-md font-bold whitespace-nowrap text-[#a27b9d]">ソフトサービスで稼ぎにくくなった理由</p>
                 </div>
 
@@ -195,8 +183,7 @@ export default function ThreeAssurancesPage() {
             <SpeechBubbleRight
               content={`一般的な『ソフトサービス』は
               🩵 お客様からのボディタッチがない
-              🩵 キス・フェラ・素股などがなく、
-              　　手だけで行うサービス
+              🩵 キス・フェラ・素股などがなく、手だけで行うサービス
               🩵服を脱がなくてOK
               などがあるよっ！`}
               characterSrc="images/other/feel_glasan_u7zps4"
@@ -250,7 +237,7 @@ export default function ThreeAssurancesPage() {
           {/* 枠線付きボックス */}
           <div className="mt-10 mb-8 relative">
             {/* 見出し部分 - 枠の上に重ねる */}
-            <div className="absolute -top-2.5 left-8 px-2 bg-[#fff9f7]">
+            <div className="absolute -top-2.5 left-1/2 transform -translate-x-1/2 px-2 bg-[#fff9f7]">
               <p className="text-md font-bold whitespace-nowrap text-[#eb9595]">モデルのお仕事が稼げる理由</p>
             </div>
 
