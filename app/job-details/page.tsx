@@ -16,7 +16,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="job-details1" backgroundColor="bg-[#f2f3ff]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="p-6">
+            <div className="">
               <h1 className="text-3xl font-bold text-center mb-2">具体的なお仕事内容</h1>
               <div className="text-center mb-6">
                 <div className="inline-block w-full max-w-md">
@@ -117,12 +117,12 @@ export default function ThreeAssurancesPage() {
               <h3 className="text-xl font-bold text-[#ff7bac]" id="chira-mise">①チラ見せ風撮影 例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
-              <div className="max-w-3xl mx-auto p-6">
+              <div className="max-w-3xl mx-auto p-4">
                 <div className="mt-2">
                   <p className="text-right text-[#ff7bac]">高収入度：★★★☆☆</p>
 
                   <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
-                  <div id="shichaku" className="p-6">
+                  <div id="shichaku" className="">
                     <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">試着室風</span><span className="font-normal text-[#3366cc] text-base">：試着室セットで着替えるだけ</span></p>
                     <p className="mb-4 text-sm text-[#ff7bac]">撮影時間：5~10分位</p>
 
@@ -163,7 +163,7 @@ export default function ThreeAssurancesPage() {
 
 
               <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
-              <div id="chirari" className="p-6">
+              <div id="chirari" className="p-4">
                 <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">チラ見え風</span><span className="font-normal text-[#3366cc] text-base">：日常の様々な動作をするだけ</span></p>
                 <p className="mb-4 text-sm text-[#ff7bac]">撮影時間：5~10分位</p>
 
@@ -212,12 +212,12 @@ export default function ThreeAssurancesPage() {
               <h3 className="text-xl font-bold text-[#7ba67f]" id="onara-satuei">②おなら撮影　例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
-              <div className="max-w-3xl mx-auto p-6">
+              <div className="max-w-3xl mx-auto p-4">
                 <div className="mt-2">
                   <p className="text-right text-[#7ba67f]">高収入度：★★★★☆</p>
 
                   <div className="border-t border-[#7ba67f] border-dotted my-3"></div>
-                  <div className="p-6">
+                  <div className="">
                     <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">おならフェチに向けたコンテンツ</span>
                       <br />
                       <span className="font-normal text-[#3366cc] text-base">待機中に不意に出てしまったおならを撮るなど</span></p>
@@ -317,12 +317,12 @@ export default function ThreeAssurancesPage() {
               <h3 className="text-xl font-bold text-[#778ce7]" id="toire-satuei">③トイレ系撮影　例</h3>
             </div>
             <div className="max-w-md mx-auto space-y-6">
-              <div className="max-w-3xl mx-auto p-6">
+              <div className="max-w-3xl mx-auto p-4">
                 <div className="mt-2">
                   <p className="text-right text-[#778ce7]">高収入度：★★★★★</p>
 
                   <div className="border-t border-[#778ce7] border-dotted my-3"></div>
-                  <div className="p-6">
+                  <div className="">
                     <p className="mb-4">
                       トイレというとちょっと引いてしまいますよね…
                     </p>
@@ -360,7 +360,7 @@ export default function ThreeAssurancesPage() {
               </div>
 
               <div className="max-w-3xl mx-auto px-6">
-                <div className="px-6">
+                <div className="">
                   <p className="">
                     <span className="font-bold text-[#ff7bac] text-xl">
                       尿意があるときの撮影
@@ -388,7 +388,7 @@ export default function ThreeAssurancesPage() {
                   characterAlt=""
                 />
 
-                <div className="max-w-3xl mx-auto p-6">
+                <div className="max-w-3xl mx-auto">
                   <p className="">
                     <span className="font-bold text-[#ff7bac] text-xl">
                       便意があるときの撮影                </span>
@@ -482,7 +482,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="job-details2" backgroundColor="bg-[#fff7f0]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="p-6">
+            <div className="">
               <h1 id="salary-examples" className="text-3xl font-bold text-center mb-2">お給料例</h1>
               <div className="text-center mb-6">
                 <div className="inline-block w-full max-w-md">
@@ -606,7 +606,7 @@ export default function ThreeAssurancesPage() {
                     className="rounded-full"
                   />
                 </a>
-                <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="https://kanto.qzin.jp/ocharge/reviews/?v=official" target="_blank" rel="noopener noreferrer" className="block">
                   <CldImage
                     src="images/other/icon-vanila_tat7aq"
                     width={70}
@@ -624,7 +624,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="job-details2" backgroundColor="bg-[#fff7f0]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="p-6">
+            <div className="">
               <h1 id="payment-system" className="text-3xl font-bold text-center mb-2">即日で貰えるワケ♡</h1>
               <div className="text-center mb-6">
                 <div className="inline-block w-full max-w-md">
@@ -656,7 +656,7 @@ export default function ThreeAssurancesPage() {
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto p-6">
+          <div className="max-w-3xl mx-auto">
             <p className="mb-4">
               高収入フェチ・パーツモデル専門のアルバイトである『おさいふチャージ』はプロダクション事務所ではなく、
               <span style={{ color: '#ef4444' }}>コンテンツ制作メーカーになります！</span>

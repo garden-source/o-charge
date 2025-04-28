@@ -16,7 +16,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-pink-50 rounded-lg p-6">
+            <div className="bg-pink-50 rounded-lg">
               <h1 className="text-3xl font-bold text-center mb-2">接触・接客いりません</h1>
               <H3HeadingSmall>息苦しい接客業とおさらば！！</H3HeadingSmall>
 
@@ -431,7 +431,7 @@ export default function ThreeAssurancesPage() {
                   className="rounded-full"
                 />
               </a>
-              <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="_blank" rel="noopener noreferrer" className="block">
+              <a href="https://kanto.qzin.jp/ocharge/reviews/?v=official" target="_blank" rel="noopener noreferrer" className="block">
                 <CldImage
                   src="images/other/icon-vanila_tat7aq"
                   width={70}

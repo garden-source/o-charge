@@ -16,7 +16,7 @@ export default function ThreeAssurancesPage() {
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-pink-50 rounded-lg p-6">
+            <div className="bg-pink-50 rounded-lg">
               <h1 className="text-3xl font-bold text-center mb-2" id="mibare-taisaku">安心安全の身バレ対策</h1>
               <H3HeadingSmall>身バレ知らずの実態とは！？</H3HeadingSmall>
 
