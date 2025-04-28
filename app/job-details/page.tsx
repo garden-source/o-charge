@@ -158,12 +158,13 @@ export default function ThreeAssurancesPage() {
                     bubbleBgColor="#ecfccb"
                   />
                 </div>
+              
               </div>
 
-
-
-              <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
+              
+              
               <div id="chirari" className="p-4">
+              <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
                 <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">チラ見え風</span><span className="font-normal text-[#3366cc] text-base">：日常の様々な動作をするだけ</span></p>
                 <p className="mb-4 text-sm text-[#ff7bac]">撮影時間：5~10分位</p>
 
