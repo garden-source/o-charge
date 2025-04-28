@@ -2,17 +2,27 @@
 
 import { useState, useEffect } from "react";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 
-interface SliderProps {
-    images?: string[];
+interface SlideData {
+    imageId: string;
+    link: string;
 }
 
-export default function Slider({ images }: SliderProps) {
-    const slides =
-        images && images.length > 0
-            ? images
-            : ["slide1_uu801f", "slide2_lzvrgv", "slide3_xrwb3m", "slide4_do0br4"];
+interface SliderProps {
+    slides?: SlideData[];
+}
 
+export default function Slider({ slides: customSlides }: SliderProps) {
+    // デフォルトのスライドデータ（カスタムデータがない場合）
+    const defaultSlides: SlideData[] = [
+        { imageId: "slide1_uu801f", link: "/job-details#shichaku" },
+        { imageId: "slide2_lzvrgv", link: "/job-details#chirari" },
+        { imageId: "slide3_xrwb3m", link: "/job-details#onara-satuei" },
+        { imageId: "slide4_do0br4", link: "/job-details#toire-satuei" }
+    ];
+
+    const slides = customSlides || defaultSlides;
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -43,14 +53,16 @@ export default function Slider({ images }: SliderProps) {
                 >
                     {slides.map((slide, index) => (
                         <div key={index} className="w-full flex-shrink-0">
-                            <div className="relative w-full aspect-[78/21]">
-                                <CldImage
-                                    src={slide}
-                                    alt={`Slide ${index + 1}`}
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
+                            <Link href={slide.link} className="block cursor-pointer">
+                                <div className="relative w-full aspect-[78/21]">
+                                    <CldImage
+                                        src={slide.imageId}
+                                        alt={`Slide ${index + 1}`}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -58,7 +70,10 @@ export default function Slider({ images }: SliderProps) {
 
             {/* Prev ボタン (左矢印) */}
             <button
-                onClick={prevSlide}
+                onClick={(e) => {
+                    e.preventDefault();
+                    prevSlide();
+                }}
                 className="
                     absolute 
                     left-[-0.8rem]    /* 枠外に飛び出す負の値 */
@@ -92,7 +107,10 @@ export default function Slider({ images }: SliderProps) {
 
             {/* Next ボタン (右矢印) */}
             <button
-                onClick={nextSlide}
+                onClick={(e) => {
+                    e.preventDefault();
+                    nextSlide();
+                }}
                 className="
                     absolute 
                     right-[-0.8rem]    /* 枠外に飛び出す負の値 */

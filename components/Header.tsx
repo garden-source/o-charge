@@ -1,9 +1,12 @@
 "use client";
 import { useState } from "react";
 import { CldImage } from 'next-cloudinary';
+import { usePathname } from 'next/navigation';
+import ScrollLink from './ScrollLink';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -11,6 +14,182 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  // 現在のパスに基づいてメニュー内容を取得する関数
+  const getMenuItems = () => {
+    // トップページの場合
+    if (pathname === '/') {
+      return (
+        <ul className="flex flex-col space-y-2">
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#about-work" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事内容</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#feti-model" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">フェチモデルとは</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#salary" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料について</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#studio" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">スタジオ紹介</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#assurance" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#voice" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">先輩モデルさんの声</ScrollLink>
+          </li>
+          <li className="border-b border-gray-400 pb-2">
+            <ScrollLink href="/#flow" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">応募の流れ</ScrollLink>
+          </li>
+          <li className="">
+            <ScrollLink href="/#faq" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">よくあるご質問</ScrollLink>
+          </li>
+        </ul>
+      );
+    }
+
+    // お仕事詳細ページの場合
+    if (pathname === '/job-details') {
+      return (
+        <ul className="flex flex-col space-y-2">
+          <li className="pb-2">
+            <a href="/job-details" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">具体的なお仕事内容</a>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/job-details#chira-mise" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">①チラ見せ風撮影</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/job-details#onara-satuei" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">②おなら撮影</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/job-details#toire-satuei" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">③トイレ系撮影</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/job-details#salary-examples" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料例</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/job-details#payment-system" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">即日で貰えるワケ</ScrollLink>
+          </li>
+          <br />
+          <li className="pb-2">
+            <a href="/?noModal=true" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">トップページに戻る</a>
+          </li>
+        </ul>
+      );
+    }
+
+    // 3つの安心ページの場合
+    if (pathname === '/three-assurances') {
+      return (
+        <ul className="flex flex-col space-y-2">
+          <li className="pb-2 text-white font-bold rounded">
+            <a href="/three-assurances" className="text-white rounded px-3 py-2 transition duration-300">アダルト行為一切なし！</a>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/three-assurances#no-adult" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} 近年の夜職の傾向について</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/three-assurances#no-guarantee" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} モデルのお仕事が稼げる理由</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/three-assurances#no-force" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} NO!強要宣言</ScrollLink>
+          </li>
+          <br />
+          <li className="pb-2">
+            <a href="/anshin-anzen" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">安心安全の取り組み</a>
+          </li>
+          <li className="pb-2">
+            <a href="/contactless-service" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">接触・接客いりません！</a>
+          </li>
+          <li className="pb-2">
+            <a href="/?noModal=true" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">トップページに戻る</a>
+          </li>
+        </ul>
+      );
+    }
+
+    // 安心安全の取り組みページの場合
+    if (pathname === '/anshin-anzen') {
+      return (
+        <ul className="flex flex-col space-y-2">
+          <li className="pb-2 text-white font-bold rounded">
+            <a href="/anshin-anzen" className="text-white rounded px-3 py-2 transition duration-300">安心安全の身バレ対策</a>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/anshin-anzen#personal-info" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} 掲載サイトについて</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/anshin-anzen#piracy-protection" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} 海賊版対策</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/anshin-anzen#makeup-disguise" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} メイクアップについて</ScrollLink>
+          </li>
+          <br />
+          <li className="pb-2">
+            <a href="/contactless-service" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">接触・接客いりません！</a>
+          </li>
+          <li className="pb-2">
+            <a href="/three-assurances" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">安心安全の身バレ対策</a>
+          </li>
+          <li className="pb-2">
+            <a href="/?noModal=true" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">トップページに戻る</a>
+          </li>
+        </ul>
+      );
+    }
+
+    // 接触・接客なしの仕事内容ページの場合
+    if (pathname === '/contactless-service') {
+      return (
+        <ul className="flex flex-col space-y-2">
+          <li className="pb-2 text-white font-bold rounded">
+            <a href="/contactless-service" className="text-white rounded px-3 py-2 transition duration-300">接触・接客いりません！</a>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/contactless-service#staff-info" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} スタッフ紹介</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/contactless-service#studio-location" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} アクセス</ScrollLink>
+          </li>
+          <li className="pb-2">
+            <ScrollLink href="/contactless-service#message" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">{`>`} 代表からのメッセージ</ScrollLink>
+          </li>
+          <br />
+          <li className="pb-2">
+            <a href="/three-assurances" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">アダルト行為一切なし！</a>
+          </li>
+          <li className="pb-2">
+            <a href="/anshin-anzen" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">安心安全の身バレ対策</a>
+          </li>
+          <li className="pb-2">
+            <a href="/?noModal=true" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">トップページに戻る</a>
+          </li>
+        </ul>
+      );
+    }
+
+    // // 各記事ページで共通のメニュー項目（デフォルト）
+    // return (
+    //   <ul className="flex flex-col space-y-2">
+    //     <li className="border-b border-gray-400 pb-2">
+    //       <a href="/" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">トップページ</a>
+    //     </li>
+    //     <li className={`border-b border-gray-400 pb-2 ${pathname === '/job-details' ? 'bg-[#f95858] text-white font-bold rounded' : ''}`}>
+    //       <a href="/job-details" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事詳細</a>
+    //     </li>
+    //     <li className={`border-b border-gray-400 pb-2 ${pathname === '/three-assurances' ? 'bg-[#f95858] text-white font-bold rounded' : ''}`}>
+    //       <a href="/three-assurances" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</a>
+    //     </li>
+    //     <li className={`border-b border-gray-400 pb-2 ${pathname === '/anshin-anzen' ? 'bg-[#f95858] text-white font-bold rounded' : ''}`}>
+    //       <a href="/anshin-anzen" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">安心安全の取り組み</a>
+    //     </li>
+    //     <li className={`border-b border-gray-400 pb-2 ${pathname === '/contactless-service' ? 'bg-[#f95858] text-white font-bold rounded' : ''}`}>
+    //       <a href="/contactless-service" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">接触・接客なしの仕事内容</a>
+    //     </li>
+    //   </ul>
+    // );
   };
 
   return (
@@ -69,32 +248,7 @@ export default function Header() {
         `}
         onClick={(e) => e.stopPropagation()}
       >
-        <ul className="flex flex-col space-y-2">
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#about-work" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お仕事内容</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#feti-model" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">フェチモデルとは</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#salary" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">お給料について</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#studio" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">スタジオ紹介</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#assurance" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">3つの安心</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#voice" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">先輩モデルさんの声</a>
-          </li>
-          <li className="border-b border-gray-400 pb-2">
-            <a href="/#flow" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">応募の流れ</a>
-          </li>
-          <li className="">
-            <a href="/#faq" className="text-white hover:bg-gray-700 rounded px-3 py-2 transition duration-300">よくあるご質問</a>
-          </li>
-        </ul>
+        {getMenuItems()}
       </nav>
     </header>
   );

@@ -5,15 +5,19 @@ import H3HeadingSmall from '@/components/H3HeadingSmall'
 import SpeechBubbleLeft from '@/components/SpeechBubbleLeft'
 import SpeechBubbleRight from '@/components/SpeechBubbleRight'
 import { CldImage } from 'next-cloudinary'
+import { useScrollToHash } from '@/utils/useScrollToHash'
 
 export default function ThreeAssurancesPage() {
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（例: 80px）
+
   return (
     <>
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
             <div className="bg-pink-50 rounded-lg p-6">
-              <h1 className="text-3xl font-bold text-center mb-2">安心安全の身バレ対策</h1>
+              <h1 className="text-3xl font-bold text-center mb-2" id="mibare-taisaku">安心安全の身バレ対策</h1>
               <H3HeadingSmall>身バレ知らずの実態とは！？</H3HeadingSmall>
 
               <div className="border-b-2 border-purple-200 w-full mb-6 mx-auto"></div>
@@ -89,22 +93,16 @@ export default function ThreeAssurancesPage() {
               characterSrc="images/other/feel_awate-right_jaddmq"
               characterAlt=""
             />
-            <SpeechBubbleRight
-              content={
-                <>
-                  できることなら接触がない高収入のお仕事をしたいなぁ
-                </>
-              }
-              characterSrc="images/other/feel_tameiki_otu0u4"
-              characterAlt=""
-            />
 
             <div className="mt-8 mb-8">
               <p className="leading-relaxed mb-4">
                 といった不安は、もちろんあるかと思いますが……
               </p>
               <p className="leading-relaxed mb-4">
-                おさいふチャージのこれまでの制作歴は2025年現在、25年目になりました。今までおよそ5000人ほど撮影し、ご出演いただいておりますが<span style={{ color: '#ef4444' }}>バレたことのない</span>ことがありません。
+                おさいふチャージのこれまでの制作歴は2025年現在、25年目になりました。今までおよそ5000人ほど撮影し、ご出演いただいておりますが<span style={{ fontWeight: 'bold' }}>バレたことがありません</span>。
+              </p>
+              <p className="leading-relaxed mb-4">
+                <span style={{ color: '#ef4444' }}>「バレたことのない」実績がある</span>のです。
               </p>
               <p className="leading-relaxed">
                 ここではおさいふチャージの身バレ対策についてご紹介させていただきます。
@@ -120,6 +118,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="安心してお仕事に挑むために"
             className="w-full h-auto"
+            id="personal-info"
           />
         </div>
 
@@ -160,7 +159,7 @@ export default function ThreeAssurancesPage() {
               </p>
 
               <p className="leading-relaxed mb-4">
-                おさいふチャージはこのような方に向けた作品を制作しているので、<span style={{ color: '#ef4444' }}>そもそも見る人がめちゃくちゃ少ないのです！</span>
+                おさいふチャージはこのような方に向けた作品を制作しているので、<span style={{ fontWeight: 'bold' }}>そもそも見る人がめちゃくちゃ少ないのです！</span>
               </p>
             </div>
 
@@ -254,17 +253,21 @@ export default function ThreeAssurancesPage() {
               characterAlt=""
               bubbleBgColor="#ecfccb"
             />
+          </div>
+        </div>
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
-              <CldImage
-                src="images/anshin-anzen/kaizokuban-taisaku_rfa2de"
-                width={1200}
-                height={400}
-                alt="徹底した海賊版対策"
-                className="w-full h-auto"
-              />
-            </div>
-
+        <div className="max-w-3xl -mx-4 md:mx-auto">
+          <CldImage
+            src="images/anshin-anzen/kaizokuban-taisaku_rfa2de"
+            width={1200}
+            height={400}
+            alt="徹底した海賊版対策"
+            className="w-full h-auto"
+            id="piracy-protection"
+          />
+        </div>
+        <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
             <p className="leading-relaxed mb-4">
               販売者を悩ませる犯罪行為の海賊版。これは残念ながら私たちも被害を受けている現状にあります。
             </p>
@@ -274,7 +277,7 @@ export default function ThreeAssurancesPage() {
             </p>
 
             <p className="leading-relaxed mb-4">
-              おさいふチャージでは、<span style={{ color: '#ef4444' }}>私たちを信用してご利用いただいているモデル様に恥じないよう、徹底した海賊版対策</span>を行っております。
+              おさいふチャージでは、<span style={{ fontWeight: 'bold' }}>私たちを信用してご利用いただいているモデル様に恥じないよう、徹底した海賊版対策</span>を行っております。
             </p>
 
             <p className="leading-relaxed mb-4">
@@ -378,6 +381,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="バレないため"
             className="w-full h-auto"
+            id="makeup-disguise"
           />
         </div>
 
@@ -457,7 +461,40 @@ export default function ThreeAssurancesPage() {
           />
         </div>
 
+        <div className="pt-8 max-w-md mx-auto space-y-6">
+          <h3 className="text-3xl font-bold m-2">他の記事はこちらから</h3>
 
+          <div className="space-y-4">
+            <div className="rounded-lg p-4">
+              <a href="/contactless-service">
+                <CldImage
+                  src="images/other/bunner-m_dgsxyf"
+                  width={800}
+                  height={300}
+                  alt="メンフレをおさらば！！"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="rounded-lg p-4">
+              <a href="/three-assurances">
+                <CldImage
+                  src="images/other/bunner-h_m7649c"
+                  width={800}
+                  height={300}
+                  alt="Hなことしたくない"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="text-center mt-6">
+              <a href="/?noModal=true" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+            </div>
+          </div>
+
+        </div>
       </SectionWrapper >
     </>
   )

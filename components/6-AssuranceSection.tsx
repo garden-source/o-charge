@@ -31,6 +31,16 @@ export default function AssuranceSection() {
           嫌なことはNGでOK！<br />
           ご自身でお仕事を選んでいただけます◎
         </p>
+
+        <div className="m-3">
+          <a
+            href="/three-assurances"
+            className="text-[#8c7ab4] font-medium inline-block px-3 py-1 hover:opacity-80"
+            style={{ borderBottom: '2px dotted #8c7ab4', borderSpacing: '4px' }}
+          >
+            Read more→
+          </a>
+        </div>
       </div>
 
       {/* 2つ目 */}
@@ -58,6 +68,15 @@ export default function AssuranceSection() {
           そんな仕事の仕方で<br />
           風俗より稼げてしまいます♪
         </p>
+        <div className="m-3">
+          <a
+            href="/contactless-service"
+            className="text-[#8c7ab4] font-medium inline-block px-3 py-1 hover:opacity-80"
+            style={{ borderBottom: '2px dotted #8c7ab4', borderSpacing: '4px' }}
+          >
+            Read more→
+          </a>
+        </div>
       </div>
 
       {/* 3つ目 */}
@@ -88,6 +107,15 @@ export default function AssuranceSection() {
           <br />
           ウィッグやメガネで大変身させちゃいます！
         </p>
+        <div className="m-3">
+          <a
+            href="/anshin-anzen"
+            className="text-[#8c7ab4] font-medium inline-block px-3 py-1 hover:opacity-80"
+            style={{ borderBottom: '2px dotted #8c7ab4', borderSpacing: '4px' }}
+          >
+            Read more→
+          </a>
+        </div>
       </div>
     </SectionWrapper>
 

@@ -5,8 +5,12 @@ import H3HeadingSmall from '@/components/H3HeadingSmall'
 import SpeechBubbleLeft from '@/components/SpeechBubbleLeft'
 import SpeechBubbleRight from '@/components/SpeechBubbleRight'
 import { CldImage } from 'next-cloudinary'
+import { useScrollToHash } from '@/utils/useScrollToHash'
 
 export default function ThreeAssurancesPage() {
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（80px）
+
   return (
     <>
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
@@ -83,7 +87,7 @@ export default function ThreeAssurancesPage() {
               }
               characterSrc="images/other/feel_awate-left_faxrj1"
               characterAlt=""
-              bubbleBgColor=""
+              bubbleBgColor="#fde0e0"
             />
             <SpeechBubbleRight
               content={
@@ -151,9 +155,9 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="どんなスタッフさんがいるの？"
             className="w-full h-auto"
+            id="staff-info"
           />
         </div>
-
 
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
@@ -199,7 +203,6 @@ export default function ThreeAssurancesPage() {
               </p>
             </div>
 
-
             <SpeechBubbleLeft
               content={
                 <>
@@ -227,27 +230,22 @@ export default function ThreeAssurancesPage() {
               characterSrc="images/other/feel_nomal_gug0dm"
               characterAlt=""
             />
+          </div>
+        </div>
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
-              <CldImage
-                src="images/contactless-service/where_y8jaat"
-                width={1200}
-                height={400}
-                alt="スタジオはどこ？"
-                className="w-full h-auto"
-              />
-            </div>
+        <div className="p-8max-w-3xl -mx-4 md:mx-auto">
+          <CldImage
+            src="images/contactless-service/where_y8jaat"
+            width={1200}
+            height={400}
+            alt="スタジオはどこ？"
+            className="w-full h-auto"
+            id="studio-location"
+          />
+        </div>
 
-            <SpeechBubbleRight
-              content={
-                <>
-                  またアダルト動画サイトの閲覧数はNetflixよりはるかに上回るアクセス数を維持しているよっ！
-                </>
-              }
-              characterSrc="images/other/feel_interi_hsrskl"
-              characterAlt=""
-            />
-
+        <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
             <p className="leading-relaxed mb-4">
               おさいふチャージが運営する撮影スタジオの<span style={{ color: '#ef4444' }}>最寄り駅は埼玉県・さいたま市にある</span><span style={{ color: '#ef4444', fontWeight: 'bold' }}>「浦和駅・武蔵浦和駅」</span>です。
             </p>
@@ -313,17 +311,27 @@ export default function ThreeAssurancesPage() {
               埋まりが大変早くなっておりますが、モデル様のご予定やご都合によってはご案内できることもあるため、お気軽にご相談下されば幸いです。
             </p>
 
-            <div className="max-w-3xl -mx-4 md:mx-auto">
-              <CldImage
-                src="images/contactless-service/message_vmj8fi"
-                width={1200}
-                height={400}
-                alt="おさいふチャージ代表からのメッセージ"
-                className="w-full h-auto"
-              />
-            </div>
-
             <p className="leading-relaxed mb-4">
+              信頼のおけるスタジオとして感じていただけるように努め、モデルの皆様が抱えるお金の悩みやご相談にも真摯に対応させていただきます。
+            </p>
+
+          </div>
+        </div>
+
+        <div className="p-8max-w-3xl -mx-4 md:mx-auto">
+          <CldImage
+            src="images/contactless-service/message_vmj8fi"
+            width={1200}
+            height={400}
+            alt="おさいふチャージ代表からのメッセージ"
+            className="w-full h-auto"
+            id="message"
+          />
+        </div>
+
+        <div className="max-w-md mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg font-bold leading-relaxed mb-4 text-[#72617c]">
               ⭐️ ご挨拶
             </p>
 
@@ -363,7 +371,10 @@ export default function ThreeAssurancesPage() {
               性行為、一切必要ないお仕事だけご用意してお待ち致しております。
             </p>
 
-            <hr className="my-8" />
+            <hr className="border-0 border-b-4 border-dotted border-gray-400 my-8 text-[#72617c]" />
+            <p className="text-lg font-bold leading-relaxed mb-4 text-[#72617c]">
+              ⭐️ リピーター特典もご用意
+            </p>
 
             <p className="leading-relaxed mb-4">
               支えてくださっていたリピーター様への感謝を込めて、報酬のアップを実現いたしました。
@@ -395,16 +406,80 @@ export default function ThreeAssurancesPage() {
               ※他社や他SNSでこちらの名称の真似や、文言を多数引用している所がありますのでご注意ください。
             </p>
 
-            <hr className="my-8" />
+            <hr className="border-0 border-b-4 border-dotted border-gray-400 my-8 text-[#72617c]" />
 
             <p className="leading-relaxed mb-4">
               最新の口コミはSNSまたはバニラサイトをチェック←
             </p>
 
+            <div className="flex space-x-8 mb-6 justify-center">
+              <a href="https://x.com/OsaifuCharge" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-x_d9tkzh"
+                  width={70}
+                  height={70}
+                  alt="Twitter/X"
+                  className="rounded-full"
+                />
+              </a>
+              <a href="https://www.instagram.com/osaifu_max/" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-insta_r5gxga"
+                  width={70}
+                  height={70}
+                  alt="Instagram"
+                  className="rounded-full"
+                />
+              </a>
+              <a href="https://kanto.qzin.jp/ocharge/blog/?v=official" target="_blank" rel="noopener noreferrer" className="block">
+                <CldImage
+                  src="images/other/icon-vanila_tat7aq"
+                  width={70}
+                  height={70}
+                  alt="Like"
+                  className=""
+                />
+              </a>
+            </div>
+
           </div>
+        </div >
+
+
+        <div className="pt-8 max-w-md mx-auto space-y-6">
+          <h3 className="text-3xl font-bold m-2">他の記事はこちらから</h3>
+
+          <div className="space-y-4">
+            <div className="rounded-lg p-4">
+              <a href="/three-assurances">
+                <CldImage
+                  src="images/other/bunner-h_m7649c"
+                  width={800}
+                  height={300}
+                  alt="Hなことしたくない"
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="rounded-lg p-4">
+              <a href="/anshin-anzen">
+                <CldImage
+                  src="images/other/bunner-mb_u3ojq4"
+                  width={800}
+                  height={300}
+                  alt="身バレがトラウマに..."
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="text-center mt-6">
+              <a href="/?noModal=true" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+            </div>
+          </div>
+
         </div>
-
-
 
 
 

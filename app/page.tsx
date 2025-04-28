@@ -11,13 +11,27 @@ import AssuranceSection from "@/components/6-AssuranceSection";
 import VoiceSection from "@/components/7-VoiceSection";
 import FlowSection from "@/components/8-FlowSection";
 import FaqSection from "@/components/9-FaqSection";
+import { useScrollToHash } from '@/utils/useScrollToHash'
+import { useSearchParams } from 'next/navigation';
 
 export default function HomePage() {
-  const [showAgeCheck, setShowAgeCheck] = useState(true);
+  // クライアントサイドレンダリングを検出するためのstate
+  const [mounted, setMounted] = useState(false);
+  // モーダル表示制御用のstate - 初期値はnullにして未決定状態にする
+  const [showAgeCheck, setShowAgeCheck] = useState<boolean | null>(null);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    // 何もなし => 毎回モーダルが表示される
-  }, []);
+    // コンポーネントがマウントされたことを記録
+    setMounted(true);
+
+    // noModal=trueの場合はモーダルを表示しない
+    if (searchParams.get('noModal') === 'true') {
+      setShowAgeCheck(false);
+    } else {
+      setShowAgeCheck(true);
+    }
+  }, [searchParams]);
 
   const handleEnter = () => {
     setShowAgeCheck(false);
@@ -27,10 +41,13 @@ export default function HomePage() {
     window.location.href = "http://www.google.co.jp/";
   };
 
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（80px）
+
   return (
     <>
-      {/* 18歳認証モーダル */}
-      {showAgeCheck && (
+      {/* mounted状態かつshowAgeCheckがtrueの場合のみモーダルを表示 */}
+      {mounted && showAgeCheck && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div
             className="bg-white/90 w-[90%] max-w-md p-6 rounded shadow relative flex flex-col items-center"
