@@ -4,8 +4,13 @@ import SectionWrapper from '@/components/SectionWrapper'
 import SpeechBubbleLeft from '@/components/SpeechBubbleLeft'
 import SpeechBubbleRight from '@/components/SpeechBubbleRight'
 import { CldImage } from 'next-cloudinary'
+import { useScrollToHash } from '@/utils/useScrollToHash'
+import ScrollLink from '@/components/ScrollLink'
 
 export default function ThreeAssurancesPage() {
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（80px）
+
   return (
     <>
       <SectionWrapper id="job-details1" backgroundColor="bg-[#f2f3ff]">
@@ -55,54 +60,27 @@ export default function ThreeAssurancesPage() {
                 </p>
 
                 <p className="leading-relaxed mb-4">
-                  <a
+                  <ScrollLink
                     href="#chira-mise"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.getElementById('chira-mise');
-                      if (element) {
-                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
-                        window.scrollTo({
-                          top: offsetTop,
-                          behavior: 'smooth'
-                        });
-                      }
-                    }}
-                    style={{ color: '#f6a1bd', cursor: 'pointer' }}
-                    className="inline-block py-2 border-b-dotted border-[#f6a1bd]"
-                  >①チラ見せ風撮影</a><br />
-                  <a
+                    className="inline-block py-0 border-b border-dotted border-[#f6a1bd]"
+                    offset={80}
+                  >
+                    <span style={{ color: '#f6a1bd', cursor: 'pointer' }}>①チラ見せ風撮影</span>
+                  </ScrollLink><br />
+                  <ScrollLink
                     href="#onara-satuei"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.getElementById('onara-satuei');
-                      if (element) {
-                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
-                        window.scrollTo({
-                          top: offsetTop,
-                          behavior: 'smooth'
-                        });
-                      }
-                    }}
-                    style={{ color: '#7ba67f', cursor: 'pointer' }}
-                    className="inline-block py-2 border-b-dotted border-[#7ba67f]"
-                  >②おなら撮影</a><br />
-                  <a
+                    className="inline-block py-0 border-b border-dotted border-[#7ba67f]"
+                    offset={80}
+                  >
+                    <span style={{ color: '#7ba67f', cursor: 'pointer' }}>②おなら撮影</span>
+                  </ScrollLink><br />
+                  <ScrollLink
                     href="#toire-satuei"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.getElementById('toire-satuei');
-                      if (element) {
-                        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
-                        window.scrollTo({
-                          top: offsetTop,
-                          behavior: 'smooth'
-                        });
-                      }
-                    }}
-                    style={{ color: '#778ce7', cursor: 'pointer' }}
-                    className="inline-block py-2 border-b-dotted border-[#778ce7]"
-                  >③トイレ系撮影</a>
+                    className="inline-block py-0 border-b border-dotted border-[#778ce7]"
+                    offset={80}
+                  >
+                    <span style={{ color: '#778ce7', cursor: 'pointer' }}>③トイレ系撮影</span>
+                  </ScrollLink>
                 </p>
 
                 <p className="leading-relaxed mb-4">
@@ -144,8 +122,8 @@ export default function ThreeAssurancesPage() {
                   <p className="text-right text-[#ff7bac]">高収入度：★★★☆☆</p>
 
                   <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
-                  <div className="p-6">
-                    <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">試着室風</span><span className="font-normal text-black text-base">：試着室セットで着替えるだけ</span></p>
+                  <div id="shichaku" className="p-6">
+                    <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">試着室風</span><span className="font-normal text-[#3366cc] text-base">：試着室セットで着替えるだけ</span></p>
                     <p className="mb-4 text-sm text-[#ff7bac]">撮影時間：5~10分位</p>
 
                     <p className="mb-4">
@@ -185,8 +163,8 @@ export default function ThreeAssurancesPage() {
 
 
               <div className="border-t border-[#ff7bac] border-dotted my-3"></div>
-              <div className="p-6">
-                <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">チラ見え風</span><span className="font-normal text-black text-base">：日常の様々な動作をするだけ</span></p>
+              <div id="chirari" className="p-6">
+                <p className="mb-1"><span className="font-bold text-[#3366cc] text-xl">チラ見え風</span><span className="font-normal text-[#3366cc] text-base">：日常の様々な動作をするだけ</span></p>
                 <p className="mb-4 text-sm text-[#ff7bac]">撮影時間：5~10分位</p>
 
                 <p className="mb-4">
@@ -505,7 +483,7 @@ export default function ThreeAssurancesPage() {
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
             <div className="p-6">
-              <h1 className="text-3xl font-bold text-center mb-2">お給料例</h1>
+              <h1 id="salary-examples" className="text-3xl font-bold text-center mb-2">お給料例</h1>
               <div className="text-center mb-6">
                 <div className="inline-block w-full max-w-md">
                   <div className="border-b-2 border-gray-400 border-dotted pb-2"></div>
@@ -647,7 +625,7 @@ export default function ThreeAssurancesPage() {
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
             <div className="p-6">
-              <h1 className="text-3xl font-bold text-center mb-2">即日で貰えるワケ♡</h1>
+              <h1 id="payment-system" className="text-3xl font-bold text-center mb-2">即日で貰えるワケ♡</h1>
               <div className="text-center mb-6">
                 <div className="inline-block w-full max-w-md">
                   <div className="border-b-2 border-gray-400 border-dotted pb-2"></div>
@@ -747,7 +725,7 @@ export default function ThreeAssurancesPage() {
           </div>
 
           <div className="text-center mt-6">
-            <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+            <a href="/?noModal=true" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
           </div>
         </div>
       </SectionWrapper >

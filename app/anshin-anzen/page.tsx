@@ -5,15 +5,19 @@ import H3HeadingSmall from '@/components/H3HeadingSmall'
 import SpeechBubbleLeft from '@/components/SpeechBubbleLeft'
 import SpeechBubbleRight from '@/components/SpeechBubbleRight'
 import { CldImage } from 'next-cloudinary'
+import { useScrollToHash } from '@/utils/useScrollToHash'
 
 export default function ThreeAssurancesPage() {
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（例: 80px）
+
   return (
     <>
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
         <div className="max-w-md mx-auto space-y-6">
           <div className="max-w-3xl mx-auto">
             <div className="bg-pink-50 rounded-lg p-6">
-              <h1 className="text-3xl font-bold text-center mb-2">安心安全の身バレ対策</h1>
+              <h1 className="text-3xl font-bold text-center mb-2" id="mibare-taisaku">安心安全の身バレ対策</h1>
               <H3HeadingSmall>身バレ知らずの実態とは！？</H3HeadingSmall>
 
               <div className="border-b-2 border-purple-200 w-full mb-6 mx-auto"></div>
@@ -114,6 +118,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="安心してお仕事に挑むために"
             className="w-full h-auto"
+            id="personal-info"
           />
         </div>
 
@@ -258,6 +263,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="徹底した海賊版対策"
             className="w-full h-auto"
+            id="piracy-protection"
           />
         </div>
         <div className="max-w-md mx-auto space-y-6">
@@ -375,6 +381,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="バレないため"
             className="w-full h-auto"
+            id="makeup-disguise"
           />
         </div>
 
@@ -483,7 +490,7 @@ export default function ThreeAssurancesPage() {
             </div>
 
             <div className="text-center mt-6">
-              <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+              <a href="/?noModal=true" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
             </div>
           </div>
 

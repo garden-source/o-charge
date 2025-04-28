@@ -5,8 +5,12 @@ import H3HeadingSmall from '@/components/H3HeadingSmall'
 import SpeechBubbleLeft from '@/components/SpeechBubbleLeft'
 import SpeechBubbleRight from '@/components/SpeechBubbleRight'
 import { CldImage } from 'next-cloudinary'
+import { useScrollToHash } from '@/utils/useScrollToHash'
 
 export default function ThreeAssurancesPage() {
+  // ページ読み込み時にハッシュフラグメントがあれば自動スクロール
+  useScrollToHash(80); // ヘッダーの高さに合わせて調整（80px）
+
   return (
     <>
       <SectionWrapper id="three-assurances" backgroundColor="bg-[#fff9f7]">
@@ -126,6 +130,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="アダルト行為一切なし"
             className="w-full h-auto"
+            id="no-adult"
           />
         </div>
 
@@ -232,6 +237,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="ヘルスをしても稼げる保証はない"
             className="w-full h-auto"
+            id="no-guarantee"
           />
         </div>
         <div className="max-w-md mx-auto space-y-6">
@@ -298,6 +304,7 @@ export default function ThreeAssurancesPage() {
             height={400}
             alt="ヘルスをしても稼げる保証はない"
             className="w-full h-auto"
+            id="no-force"
           />
         </div>
         <div className="pt-8 max-w-md mx-auto space-y-6">
@@ -323,7 +330,7 @@ export default function ThreeAssurancesPage() {
                   src="images/other/bunner-m_dgsxyf"
                   width={800}
                   height={300}
-                  alt="メンフレをおさらば！！"
+                  alt="no_force"
                   className="w-full h-auto rounded-lg"
                 />
               </a>
@@ -342,7 +349,7 @@ export default function ThreeAssurancesPage() {
             </div>
 
             <div className="text-center mt-6">
-              <a href="/" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
+              <a href="/?noModal=true" className="text-gray-500 hover:text-gray-700 text-sm border-b-2 border-dotted border-gray-500 pb-1 px-2">トップページに戻る</a>
             </div>
           </div>
 
